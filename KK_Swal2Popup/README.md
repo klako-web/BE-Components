@@ -76,4 +76,47 @@ Custom image width. Can be in any CSS unit (e.g., ``px``, ``em``, ``rem``, ``%``
 Defaults to ``true``. If this is set, the popup can be closed by clicking into the background outside of the popup.
 
 ## Styling
+Styling works by defining a class ``swal2Popup`` in your theme editor. Here is an example of how to style the title and the warning icon:
+```
+.swal2Popup {
+  .swal2-title {
+    color: red;
+    background: blue;
+    font-size: 22px;
+    padding-bottom: 12px;
+  }
+  .swal2-icon.swal2-warning {
+    background-color: #3fc3ee;
+    border-color: #018786;
+    color: #b00020;
+  }
+  .swal2-image {
+    margin: 2em auto 1em;
+  }
+  .swal2-html-container {  // the content box
+    text-align: left;
+    font-size: 2em;
+  }
+  .swal2-actions {   // the button box
+    flex-wrap: wrap;
+    align-items: center;
+    .swal2-deny {
+      border-color: black;
+      border-style: solid;
+      border-width: 3px;
+    }
+  }
+  .swal2-footer {
+    color: yellow;
+    background: grey;
+  }
+}
+```
+Styling affects all instances of this custom component in your application.
 
+Here are some important css subclasses which you can use below ``.swal2Popup``.
+
+| Class      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
