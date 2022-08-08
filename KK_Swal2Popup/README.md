@@ -11,6 +11,10 @@ To create popups and toasts. A wrapper of the popular library [sweetalert2](http
 ![On Click Handler](./assets/onClickHandler.png)
 - This action returns an object which basically shows which buttons have been pressed, for instance ``{"isConfirmed":true,"isDenied":false,"isDismissed":false,"value":true}``
 
+## Actions
+
+### Show
+
 ## Properties
 
 ### Title
