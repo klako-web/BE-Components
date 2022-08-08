@@ -93,9 +93,9 @@ Styling works by defining a class ``swal2Popup`` in your theme editor. Here is a
   .swal2-image {
     margin: 2em auto 1em;
   }
-  .swal2-html-container {  // the content box
-    text-align: left;
-    font-size: 2em;
+  .swal2-html-container {  // the popup/toast content
+    text-align: left !important;
+    font-size: 2em !important;
   }
   .swal2-actions {   // the button box
     flex-wrap: wrap;
@@ -113,10 +113,3 @@ Styling works by defining a class ``swal2Popup`` in your theme editor. Here is a
 }
 ```
 Styling affects all instances of this custom component in your application.
-
-Here are some important css subclasses which you can use below ``.swal2Popup``.
-
-| Class      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
