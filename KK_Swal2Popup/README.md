@@ -80,7 +80,7 @@ Custom image width. Can be in any CSS unit (e.g., ``px``, ``em``, ``rem``, ``%``
 Defaults to ``true``. If this is set, the popup can be closed by clicking into the background outside of the popup.
 
 ## Styling
-Styling works by defining a class ``swal2Popup`` in your theme editor. Here is an example of how to style the title and the warning icon:
+Styling works by defining a class ``swal2Popup`` in your theme editor. Here is an example with some commonly used styling elements:
 ```
 .swal2Popup {
   .swal2-title {
