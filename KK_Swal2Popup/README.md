@@ -1,8 +1,9 @@
 # KK_Swal2Popup
 
-To create popups and toasts. A wrapper of the popular library [sweetalert2](https://sweetalert2.github.io/).
+## Purpose
+To create popups and toasts. This is wrapper around the popular library [sweetalert2](https://sweetalert2.github.io/).
 
->**Disclaimer**: This component is not released for productive use. No warranties!
+>**Disclaimer**: This component is not released for productive use yet. No warranties!
 
 ## General usage
 - Place the component somewhere on a page. There will be no visible reflection in the preview. Don't worry.
@@ -11,9 +12,14 @@ To create popups and toasts. A wrapper of the popular library [sweetalert2](http
 ![On Click Handler](./assets/onClickHandler.png)
 - This action returns an object which basically shows which buttons have been pressed, for instance ``{"isConfirmed":true,"isDenied":false,"isDismissed":false,"value":true}``
 
+<br>
+
 ## Actions
 
 ### Show
+This acton is exposed via a Backendless Codeless Block. See **General usage** for an example. The block parameter has to be set to the ``Id`` of a component instance on a specific page.
+
+<br>
 
 ## Properties
 
@@ -117,3 +123,11 @@ Styling works by defining a class ``swal2Popup`` in your theme editor. Here is a
 }
 ```
 Styling affects all instances of this custom component in your application.
+
+<br>
+<br>
+
+## Reused libraries and components
+This product includes the following external code libraries/components, which are not owned by the author of KK_Swal2Popup:
+
+- [Sweetalert2](https://sweetalert2.github.io/). Licensed under the [MIT License](https://github.com/sweetalert2/sweetalert2/blob/main/LICENSE).
