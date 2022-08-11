@@ -1,7 +1,7 @@
-# KK_Swal2Popup
+# KK_Popup
 
 ## Purpose
-To create popups and toasts. This is wrapper around the popular library [sweetalert2](https://sweetalert2.github.io/).
+To create popups and toasts.
 
 >**Disclaimer**: This component is not released for productive use yet. No warranties!
 
@@ -128,6 +128,6 @@ Styling affects all instances of this custom component in your application.
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of KK_Swal2Popup:
+This product includes the following external code libraries/components, which are not owned by the author of ``KK_Popup``:
 
 - [Sweetalert2](https://sweetalert2.github.io/). Licensed under the [MIT License](https://github.com/sweetalert2/sweetalert2/blob/main/LICENSE).
