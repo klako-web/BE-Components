@@ -71,6 +71,6 @@ The text to be shown as popup content. Can be HTML.
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ``KK_UploadResizedCroppedImage``:
+This product includes the following external code libraries/components, which are not owned by the author of ``KK_ResizedCroppedImageUploader``:
 
 - [Cropper.js](https://fengyuanchen.github.io/cropperjs/). Licensed under the [MIT License](https://github.com/fengyuanchen/cropperjs/blob/main/LICENSE).
