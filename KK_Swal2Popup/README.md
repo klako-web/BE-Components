@@ -15,6 +15,7 @@ To create popups and toasts.
 <br>
 
 ## Actions
+For each nocode-block of an action, you have to select the ``Id`` of the custom component instance, which you placed on the page.
 
 ### Show
 This acton is exposed via a Backendless Codeless Block. See **General usage** for an example. The block parameter has to be set to the ``Id`` of a component instance on a specific page.
