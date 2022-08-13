@@ -18,7 +18,7 @@ To create popups and toasts.
 For each nocode-block of an action, you have to select the ``Id`` of the custom component instance, which you placed on the page.
 
 ### Show
-This acton is exposed via a Backendless Codeless Block. See **General usage** for an example. The block parameter has to be set to the ``Id`` of a component instance on a specific page.
+This action is exposed via a Backendless Codeless Block. See **General usage** for an example. The block parameter has to be set to the ``Id`` of a component instance on a specific page.
 
 <br>
 
@@ -36,7 +36,7 @@ The text to be shown as popup footer. Can be HTML.
 ### Icon Type
 The type of the icon show with the popup
 
-Possible values: ``<none>``, ``Information``, ``Warning``, ``Error``, ``Success``, ``Question``.
+Possible values: ``<nothing>``, ``Information``, ``Warning``, ``Error``, ``Success``, ``Question``.
 
 ### Show Confirm Button
 Boolean to decide whether to show the confirm button. Defaults to ``true``.
