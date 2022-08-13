@@ -1,7 +1,7 @@
 # KK_Popup
 
 ## Purpose
-To create popups and toasts.
+To create popups and toasts. 
 
 >**Disclaimer**: This component is not released for productive use yet. No warranties!
 
@@ -9,7 +9,7 @@ To create popups and toasts.
 - Place the component somewhere on a page. There will be no visible reflection in the preview. Don't worry.
 - Fill the ``Id`` property in the side panel. Otherwise, you will not be able to work with actions
 - To trigger a popup, use the component action ``show``. For instance, you can call this action within an ``On Click Event`` of a button.
-![On Click Handler](./assets/onClickHandler.png)
+![On Click Handler]()
 - This action returns an object which basically shows which buttons have been pressed, for instance ``{"isConfirmed":true,"isDenied":false,"isDismissed":false,"value":true}``
 
 <br>
