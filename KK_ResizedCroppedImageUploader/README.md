@@ -19,7 +19,9 @@
 2. Place the custom component ``KK_ResizedCroppedImageUploader`` into the Block-component. 
 3. Fill the ``Id`` property of the custom component in the side panel. Otherwise, you will not be able to work with actions.
 4. Place buttons on your page. In the respective "On Click Event"-handlers call one of the custom component actions. An example how this can look like is shown here:
+
 ![sample](./assets/sample.png)
+
 By default, a resizable crop box is shown after an image has been selected.
 
 <br>
@@ -40,8 +42,6 @@ See ``Min Canvas Width``.
 
 ## Actions
 For each nocode-block of an action, you have to select the ``Id`` of the custom component instance, which you placed on the page.
-
-<br>
 
 ### Select Image
 *Input parameters:* None
@@ -78,8 +78,6 @@ An image is inserted from the device clipboard. If this is done for the first ti
 
 ![On Click Handler](./assets/zoom.png)
 
-<br>
-
 ### Save Cropped Image
 Uploads the crop area of the image to the Backendless file system. An image can be scaled along its width or height dimension and the image encoding type can be chosen (jpeg, webp, png, etc.). For image types supporting lossy compression (e.g. jpeg, webp) the amount of compression can be specified.
 
@@ -93,16 +91,14 @@ Uploads the crop area of the image to the Backendless file system. An image can 
 - ``Image Type``: Optional. The image encoding type (``jpg``, ``png``, etc.) of images extracted from the canvas. If omitted, the type is taken from the specified filename.
 
 
-
-<br>
-
 ### Get Cropped Image
+t.b.d.
 
 ### Reset
+t.b.d.
 
 <br>
 <br>
-
 
 ## Styling
 
