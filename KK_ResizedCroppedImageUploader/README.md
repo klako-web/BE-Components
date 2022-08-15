@@ -1,4 +1,4 @@
-# KK_ResizedCroppedImageUploader
+# KK-ResizedCroppedImageUploader
 
 ## Use Cases
 - Select an image from local file system, camera, or clipboard

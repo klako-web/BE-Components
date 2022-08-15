@@ -1,7 +1,7 @@
-# KK_Popup
+# KK-Popup
 
 ## Purpose
-To create popups and toasts. 
+To create popups and toasts.
 
 >**Disclaimer**: This component is not released for productive use yet. No warranties!
 
