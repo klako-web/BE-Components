@@ -106,6 +106,6 @@ t.b.d.
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ``KK_ResizedCroppedImageUploader``:
+This product includes the following external code libraries/components, which are not owned by the author of ``KK-ResizedCroppedImageUploader``, or ``KK-ResizedCroppedImageUploaderPro``:
 
 - [Cropper.js](https://fengyuanchen.github.io/cropperjs/). Licensed under the [MIT License](https://github.com/fengyuanchen/cropperjs/blob/main/LICENSE).

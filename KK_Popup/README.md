@@ -129,6 +129,6 @@ Styling affects all instances of this custom component in your application.
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ``KK_Popup``:
+This product includes the following external code libraries/components, which are not owned by the author of ``KK-Popup``, or ``KK-PopupPro``:
 
 - [Sweetalert2](https://sweetalert2.github.io/). Licensed under the [MIT License](https://github.com/sweetalert2/sweetalert2/blob/main/LICENSE).
