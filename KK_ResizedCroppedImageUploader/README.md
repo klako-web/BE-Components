@@ -82,11 +82,10 @@ An image is inserted from the device clipboard. If this is done for the first ti
 Uploads the crop area of the image to the Backendless file system. An image can be scaled along its width or height dimension and the image encoding type can be chosen (jpeg, webp, png, etc.). For image types supporting lossy compression (e.g. jpeg, webp) the amount of compression can be specified.
 
 *Input parameters:*
-- ``No Scaling``: Optional. Default is ``false``. If set to ``true`` images are not scaled when extracted or saved from the canvas. In this case, the parameters ``Scaling Dimension`` and ``Pixel Size`` are ignored.
 - ``File Name``: Optional. The name of the file to be saved (including file extension). If omitted, the name of the selected file is used, where the file extension is set according to the input parameter ``Image Type``. If an image is pasted from the clipboard and ``File Name`` is omitted, a name "fromClipboard``wxyz``.png" is generated, where ``wxyz`` is a random 4-digit number.
 - ``File Path``: Mandatory. The target path on the Backendless file system, for example ``/web/tmp/``. The current user must have the appropriate permissions to create and write files.
-- ``Scaling Dimension``: Optional. Valid values are ``width`` and ``height``. Before uploading the image to the Backendless file system, it can be scaled along either its width or height dimension.
-- ``Pixel Size``: Optional. The amount of pixels to be set for the selected scaling dimension. The number of pixels for the other dimension is computed in a way that does not change the image aspect ratio.
+- ``Scaling Dimension``: Optional. Valid values are ``width`` and ``height``. Before uploading the image to the Backendless file system, it can be scaled along either its width or height dimension. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixel Size`` is specified, the extracted or saved image will not be scaled.
+- ``Scaling Pixel Size``: Optional. The amount of pixels to be set for the selected scaling dimension. The number of pixels for the other dimension is computed in a way that does not change the image aspect ratio. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixel Size`` is specified, the extracted or saved image will not be scaled.
 - ``Compression Ratio``: Optional. A number between ``0`` and ``1``. The default is ``0.8``. Is applied if the resulting image type supports lossy compression (e.g., ``jpg``, ``webp``).
 - ``Image Type``: Optional. The image encoding type (``jpg``, ``png``, etc.) of images extracted from the canvas. If omitted, the type is taken from the specified filename.
 
