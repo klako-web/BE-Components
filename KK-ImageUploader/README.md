@@ -5,6 +5,7 @@
 - Rotate the image
 - Crop an area of interest
 - Save the image to Backendless file system with reduced size (width, height) and reduced quality (for lossy image formats) and desired image type.
+- Select the cropping result for further processing by Backendless nocode logic.
 
 <br>
 
@@ -16,7 +17,7 @@
 
 ## General usage
 1. Place a Block-UI-component on a page where you want to display the preview of an image to be uploaded. Adjust the dimensions and other properties of this Block-component to your needs.
-2. Place the custom component ``KK_ResizedCroppedImageUploader`` into the Block-component. 
+2. Place the custom component ``KK_ImageUploader`` into the Block-component. 
 3. Fill the ``Id`` property of the custom component in the side panel. Otherwise, you will not be able to work with actions.
 4. Place buttons on your page. In the respective "On Click Event"-handlers call one of the custom component actions. An example how this can look like is shown here:
 
@@ -25,9 +26,9 @@
 By default, a resizable crop box is shown after an image has been selected.
 
 <br>
-<br>
 
 ## Properties
+<br>
 
 ### No Crop Box
 Boolean. If checked, no resizable crop area is shown above the image. Still, parts of the image can be cropped, by zooming-in and moving the image along the canvas. The save and crop action will then crop the visible part of the image.
@@ -43,6 +44,8 @@ See ``Min Canvas Width``.
 ## Actions
 For each nocode-block of an action, you have to select the ``Id`` of the custom component instance, which you placed on the page.
 
+<br>
+
 ### Select Image
 *Input parameters:* None
 
@@ -52,12 +55,16 @@ An image selection dialog is shown, which depends on the device. On mobiles, you
 
 ![On Click Handler](./assets/select.png)
 
+<br>
+
 ### Paste Image
 *Input parameters:* None
 
 An image is inserted from the device clipboard. If this is done for the first time, the device will ask for permissions for this operation. If you do not grant permission, the paste operation will fail. 
 
 > **Note:** The paste action does not work on all browsers (yet). For instance, Firefox is not supporting the required permission. Therefore, if you want to leverage this action, test with the browser versions relevant for you.
+
+<br>
 
 ### Rotate Image
 *Input parameters:* 
@@ -67,6 +74,7 @@ An image is inserted from the device clipboard. If this is done for the first ti
 
 ![On Click Handler](./assets/rotate.png)
 
+<br>
 
 ### Zoom In/Out
 *Input parameters:* 
@@ -77,6 +85,8 @@ An image is inserted from the device clipboard. If this is done for the first ti
 *Example*:
 
 ![On Click Handler](./assets/zoom.png)
+
+<br>
 
 ### Save Cropped Image
 Uploads the crop area of the image to the Backendless file system. An image can be scaled along its width or height dimension and the image encoding type can be chosen (jpeg, webp, png, etc.). For image types supporting lossy compression (e.g. jpeg, webp) the amount of compression can be specified.
@@ -97,7 +107,7 @@ Uploads the crop area of the image to the Backendless file system. An image can 
 
 
 
-
+<br>
 
 ### Get Cropped Image
 Extracts the image from the canvas out of the current cropping area. The image can be further processed by Backendless codeless logic.
@@ -111,8 +121,17 @@ t.b.d.
 <br>
 <br>
 
+## Events
+
+### On Image Loaded
+...
+
+### On Paste Error
+...
+
+<br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ``KK-ResizedCroppedImageUploader``, or ``KK-ResizedCroppedImageUploaderPro``:
+This product includes the following external code libraries/components, which are not owned by the author of ``KK-ImageUploader``, or ``KK-ImageUploaderPro``:
 
 - [Cropper.js](https://fengyuanchen.github.io/cropperjs/). Licensed under the [MIT License](https://github.com/fengyuanchen/cropperjs/blob/main/LICENSE).
