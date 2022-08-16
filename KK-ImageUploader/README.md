@@ -1,4 +1,4 @@
-# KK-ResizedCroppedImageUploader
+# KK-ImageUploader
 
 ## Use Cases
 - Select an image from local file system, camera, or clipboard
@@ -83,15 +83,27 @@ Uploads the crop area of the image to the Backendless file system. An image can 
 
 *Input parameters:*
 - ``File Name``: Optional. The name of the file to be saved (including file extension). If omitted, the name of the selected file is used, where the file extension is set according to the input parameter ``Image Type``. If an image is pasted from the clipboard and ``File Name`` is omitted, a name "fromClipboard``wxyz``.png" is generated, where ``wxyz`` is a random 4-digit number.
-- ``File Path``: Mandatory. The target path on the Backendless file system, for example ``/web/tmp/``. The current user must have the appropriate permissions to create and write files.
-- ``Scaling Dimension``: Optional. Valid values are ``width`` and ``height``. Before uploading the image to the Backendless file system, it can be scaled along either its width or height dimension. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixel Size`` is specified, the extracted or saved image will not be scaled.
-- ``Scaling Pixel Size``: Optional. The amount of pixels to be set for the selected scaling dimension. The number of pixels for the other dimension is computed in a way that does not change the image aspect ratio. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixel Size`` is specified, the extracted or saved image will not be scaled.
-- ``Compression Ratio``: Optional. A number between ``0`` and ``1``. The default is ``0.8``. Is applied if the resulting image type supports lossy compression (e.g., ``jpg``, ``webp``).
-- ``Image Type``: Optional. The image encoding type (``jpg``, ``png``, etc.) of images extracted from the canvas. If omitted, the type is taken from the specified filename.
+- ``File Path``: Mandatory. The target path on the Backendless file system, for example "/web/tmp/". The current user must have the appropriate permissions to create and write files.
+- ``Overwrite``: Optional. Default value is ``false``. Indicates that an existing file with the same name shall be overwritten (``Overwrite = true``), or whether an error shall be raised..
+- ``Scaling Dimension``: Optional. Valid values are "width" and "height". Before uploading the image to the Backendless file system, it can be scaled along either its width or height dimension. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixels`` is specified, the extracted or saved image will not be scaled.
+- ``Scaling Pixels``: Optional. The amount of pixels to be set for the selected scaling dimension. The number of pixels for the other dimension is computed in a way that does not change the image aspect ratio. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixels`` is specified, the extracted or saved image will not be scaled.
+- ``Compression Ratio``: Optional. A number between 0 and 1. The default is 0.8. Is applied if the resulting image type supports lossy compression (e.g., jpg or webp).
+- ``Image Type``: Optional. The image encoding type ("jpg", "png", etc.) of images extracted from the canvas. If omitted, the type is taken from the specified filename.
+
+*Return value:*
+- The URL of the saved image.
+
+*Example:*
+
+
+
 
 
 ### Get Cropped Image
-t.b.d.
+Extracts the image from the canvas out of the current cropping area. The image can be further processed by Backendless codeless logic.
+
+*Input parameters:*
+The input parameters are the same as for the action ``Save Cropped Image``
 
 ### Reset
 t.b.d.
@@ -99,10 +111,6 @@ t.b.d.
 <br>
 <br>
 
-## Styling
-
-<br>
-<br>
 
 ## Reused libraries and components
 This product includes the following external code libraries/components, which are not owned by the author of ``KK-ResizedCroppedImageUploader``, or ``KK-ResizedCroppedImageUploaderPro``:
