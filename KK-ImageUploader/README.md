@@ -3,6 +3,7 @@
 ## Use Cases
 - Select an image from local file system, camera, or clipboard
 - Rotate the image
+- Zoom in/out
 - Crop an area of interest
 - Save the image to Backendless file system with reduced size (width, height) and reduced quality (for lossy image formats) and desired image type.
 - Select the cropping result for further processing by Backendless nocode logic.
@@ -28,7 +29,6 @@ By default, a resizable crop box is shown after an image has been selected or pa
 <br>
 
 ## Properties
-<br>
 
 ### No Crop Box
 Boolean. If checked, no resizable crop area is shown above the image. Still, parts of the image can be cropped, by zooming-in and moving the image along the canvas. The save and crop action will then crop the visible part of the image.
@@ -43,8 +43,6 @@ See ``Min Canvas Width``.
 
 ## Actions
 For each nocode-block of an action, you have to select the ``Id`` of the custom component instance, which you placed on the page.
-
-<br>
 
 ### Select
 *Input parameters:* None
@@ -156,27 +154,29 @@ Each time a new image is selected or pasted, this event handler is invoked. It p
 
 ![On Image Loaded](./assets/onImageLoaded.png)
 
+<br>
+
 ### On Paste Error
-The ``Paste Image`` action is an asynchroneous operation. Therefore, error handling is provided via an event handler. If an error during pasting occurrs, or if there is no image in the clipboard, this event handler is invoked. The passed ``error`` object has properties ``code`` and ``message``. See section "Error handling" below.
+The ``Paste from Clipboard`` action is an asynchronous operation. Therefore, error handling is provided via an event handler. If an error during pasting occurrs, or if there is no image in the clipboard, this event handler is invoked. The passed ``error`` object has properties ``code`` and ``message``. See section "Error handling" below.
 
 ![On Paste Error](./assets/onPasteError.png)
 
 <br>
 
 ## Error handling
-Whenever you use codeless blocks to call component actions, you should wrap them by a ``try/catch`` block. Actions throw error objects which contain a ``code`` and a ``message``, so that you can react accordingly.
+Whenever you use codeless blocks to call component actions, you should wrap them by a ``try/catch`` block. Actions throw an error object which contain a ``code`` and a ``message`` property.
 
 ![Error handling sample](./assets/errorSample1.png)
 
-### Error handline for "Paste Image" action
-The ``Paste Image`` action is special because it runs asynchroneously. Therefore, errors are communicated via the event ``On Paste Error`` (see above event description).
+### Error handling for "Paste from Clipboard" action
+The ``Paste from Clipboard`` action is special because it runs asynchronously. Therefore, errors are communicated via the event ``On Paste Error`` (see above event description).
 
 ### Table of defined errors
 
 | Code  |  Message                            |
 | ----- | ----------------------------------- |
 | 101   | An image must be selected or pasted first |
-| 102   | Not allowed to read clipboard |
+| 102   | Not allowed to read from clipboard |
 | 103   | Clipboard contains no image data (1) |
 | 104   | Clipboard contains no image data (2) |
 | 105   | Dimension parameter must be either "width" or "height" |
