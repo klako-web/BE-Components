@@ -23,7 +23,7 @@
 
 ![sample](./assets/sample.png)
 
-By default, a resizable crop box is shown after an image has been selected.
+By default, a resizable crop box is shown after an image has been selected or pasted.
 
 <br>
 
@@ -46,7 +46,7 @@ For each nocode-block of an action, you have to select the ``Id`` of the custom 
 
 <br>
 
-### Select Image
+### Select
 *Input parameters:* None
 
 An image selection dialog is shown, which depends on the device. On mobiles, you can typically capture a live camera image in addition to selecting an existing image from the device.
@@ -57,34 +57,44 @@ An image selection dialog is shown, which depends on the device. On mobiles, you
 
 <br>
 
-### Paste Image
+### Paste from Clipboard
 *Input parameters:* None
 
-An image is inserted from the device clipboard. If this is done for the first time, the device will ask for permissions for this operation. If you do not grant permission, the paste operation will fail. 
+An image is inserted from the device clipboard into the canvas. If this is done for the first time, the device will ask for permissions for this operation. If you do not grant permission, the paste operation will fail. 
+
+*Example*:
+
+![Paste Image](./assets/paste.png)
 
 > **Note:** The paste action does not work on all browsers (yet). For instance, Firefox is not supporting the required permission. Therefore, if you want to leverage this action, test with the browser versions relevant for you.
 
 <br>
 
-### Rotate Image
+### Rotate
+The image is rotated on the canvas.
+
 *Input parameters:* 
 - ``Degree``: The amount of rotation degrees. Can be a positive or negative number.
 
 *Example*:
 
-![On Click Handler](./assets/rotate.png)
+![Rotate Image](./assets/rotate.png)
 
 <br>
 
 ### Zoom In/Out
+The image is (de)magnified on the canvas.
+> Note: A user can also use a mouse-wheel or touch gestures to zoom in/out.
+
 *Input parameters:* 
 - ``Ratio``: The ratio of (de-)magnification . Can be a positive or negative number.
 
-> Note: Zooming-in/out is  just a visual effect. The actual image file size and content is not changed.
+> Note: Zooming-in/out is  just a visual effect. The actual image dimensions
+and content is not changed by this operation.
 
 *Example*:
 
-![On Click Handler](./assets/zoom.png)
+![Zoom Image](./assets/zoom.png)
 
 <br>
 
@@ -103,9 +113,9 @@ Uploads the crop area of the image to the Backendless file system. An image can 
 *Return value:*
 - The URL of the saved image.
 
-*Example:*
+*Example*:
 
-
+![Save image](./assets/save.png)
 
 <br>
 
@@ -113,25 +123,71 @@ Uploads the crop area of the image to the Backendless file system. An image can 
 Extracts the image from the canvas out of the current cropping area. The image can be further processed by Backendless codeless logic.
 
 *Input parameters:*
-The input parameters are the same as for the action ``Save Cropped Image``
+The input parameters are the same as for the action ``Save Cropped Image``. Just the file-related parameters are missing.
 
-### Reset
-t.b.d.
+*Return value:*
+An object with the following properties is returned:
+- ``width``: the scaled image width
+- ``height``: the scaled image height
+- ``commpression``: the compression ratio
+- ``mimeType``: the mime type of the extracted image
+- ``imageData``: the binary image data of type ArrayBuffer
+- ``originalImageFileAttributes``: an object composed of:
+   - ``name``: the original file name
+   - ``size``: the original file size
+   - ``type``: the original mime type
+
+*Example*:
+This example shows how to crop an image and save it to the Backendless file system.
+
+![Crop image](./assets/crop.png)
 
 <br>
+
+### Reset
+The canvas area is set back to its initial empty state.
+
 <br>
 
 ## Events
 
 ### On Image Loaded
-...
+Each time a new image is selected or pasted, this event handler is invoked. It provides information on the image and the file which has been selected.
+
+![On Image Loaded](./assets/onImageLoaded.png)
 
 ### On Paste Error
-...
+The ``Paste Image`` action is an asynchroneous operation. Therefore, error handling is provided via an event handler. If an error during pasting occurrs, or if there is no image in the clipboard, this event handler is invoked. The passed ``error`` object has properties ``code`` and ``message``. See section "Error handling" below.
+
+![On Paste Error](./assets/onPasteError.png)
+
+<br>
+
+## Error handling
+Whenever you use codeless blocks to call component actions, you should wrap them by a ``try/catch`` block. Actions throw error objects which contain a ``code`` and a ``message``, so that you can react accordingly.
+
+![Error handling sample](./assets/errorSample1.png)
+
+### Error handline for "Paste Image" action
+The ``Paste Image`` action is special because it runs asynchroneously. Therefore, errors are communicated via the event ``On Paste Error`` (see above event description).
+
+### Table of defined errors
+
+| Code  |  Message                            |
+| ----- | ----------------------------------- |
+| 101   | An image must be selected or pasted first |
+| 102   | Not allowed to read clipboard |
+| 103   | Clipboard contains no image data (1) |
+| 104   | Clipboard contains no image data (2) |
+| 105   | Dimension parameter must be either "width" or "height" |
+| 106   | Compression ratio must be >0 and <=1 |
+| 107   | A path parameter must be specified  |
+| 108   | Filename must include a file extension  |
+| 109   | Extracted image type must match desired filename extension |
 
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ``KK-ImageUploader``, or ``KK-ImageUploaderPro``:
+This product includes the following external code libraries/components, which are not owned by the author of ``KK-ImageUploader`` and ``KK-ImageUploaderPro``:
 
 - [Cropper.js](https://fengyuanchen.github.io/cropperjs/). Licensed under the [MIT License](https://github.com/fengyuanchen/cropperjs/blob/main/LICENSE).
