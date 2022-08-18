@@ -86,7 +86,7 @@ Popup window background color.
 (**Pro-version only**) Custom image width. Can be in any CSS unit (e.g., ``px``, ``em``, ``rem``, ``%``).
 
 ### Allow Outside Click
-(** Pro-version only**) Defaults to ``true``. If this is set, the popup can be closed by clicking into the background outside of the popup. For the **non-Pro-version**, the value is always ``true``.
+(**Pro-version only**) Defaults to ``true``. If this is set, the popup can be closed by clicking into the background outside of the popup. For the **non-Pro-version**, the value is always ``true``.
 
 ## Styling
 (**Pro-version only**)
@@ -133,6 +133,6 @@ Styling affects all instances of this custom component in your application.
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ``KK-Popup``, or ``KK-PopupPro``:
+This product includes the following external code libraries/components, which are not owned by the author of ``KK-Popup`` and ``KK-PopupPro``:
 
 - [Sweetalert2](https://sweetalert2.github.io/). Licensed under the [MIT License](https://github.com/sweetalert2/sweetalert2/blob/main/LICENSE).
