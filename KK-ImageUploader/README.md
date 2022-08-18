@@ -1,5 +1,7 @@
 # KK-ImageUploader
 
+This is the documentation for ``KK-ImageUploader`` and ``KK-ImageUploaderPro``.
+
 ## Use Cases
 - Select an image from local file system, camera
 - Paste an image from clipboard (**Pro-version only**)
