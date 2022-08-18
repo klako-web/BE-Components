@@ -1,7 +1,9 @@
 # KK-Popup
 
-## Purpose
-To create popups and toasts.
+This is the documentation for ``KK-Popup`` and ``KK-PopupPro``.
+
+## Use Cases
+Create popups and toasts.
 
 >**Disclaimer**: This component is not released for productive use yet. No warranties!
 
@@ -25,13 +27,13 @@ This action is exposed via a Backendless Codeless Block. See **General usage** f
 ## Properties
 
 ### Title
-The text to be shown as popup title. Can be HTML.
+The text to be shown as popup title. The **Pro-version** supports HTML.
 
 ### Content
-The text to be shown as popup content. Can be HTML.
+The text to be shown as popup content. The **Pro-version** supports HTML.
 
 ### Footer
-The text to be shown as popup footer. Can be HTML.
+(**Pro-version only**) The text to be shown as popup footer. Supports HTML.
 
 ### Icon Type
 The type of the icon show with the popup
@@ -63,10 +65,10 @@ Defaults to ``false``
 A "Toast" is a little message box which shows information for a limited amount of time. Use the ``Duration``-property to control how long the toast is shown.
 
 ### Duration
-Controls how long a popup or toast is shown.
+(**Pro-version only**) Controls how long a popup or toast is shown in milliseconds. For the **non-Pro-version**, this interval is fixed at 2000 ms.
 
 ### Position
-Postion of the popup on the screen. Can be ``Top``, ``Top Left``, ``Top Right``, ``Center``, ``Center Left``, ``Center Right``, ``Bottom``, ``Bottom Left``, ``Bottom Right``.
+(**Pro-version only**) Postion of the popup on the screen. Can be ``Top``, ``Top Left``, ``Top Right``, ``Center``, ``Center Left``, ``Center Right``, ``Bottom``, ``Bottom Left``, ``Bottom Right``. For the **non-Pro-version**, the position is always ``Center``.
 
 ### Width
 Popup window width, including paddings (box-sizing: border-box). Can be in any CSS unit (e.g, ``px``, ``em``, ``rem``, ``%``). Defaults to ``32em``.
@@ -75,18 +77,20 @@ Popup window width, including paddings (box-sizing: border-box). Can be in any C
 Color for title, content and footer.
 
 ### Background
-Popup window background color
+Popup window background color.
 
 ### Image
-An image to be shown in the popup
+(**Pro-version only**) An image to be shown in the popup.
 
 ### Image Width
-Custom image width. Can be in any CSS unit (e.g., ``px``, ``em``, ``rem``, ``%``).
+(**Pro-version only**) Custom image width. Can be in any CSS unit (e.g., ``px``, ``em``, ``rem``, ``%``).
 
 ### Allow Outside Click
-Defaults to ``true``. If this is set, the popup can be closed by clicking into the background outside of the popup.
+(** Pro-version only**) Defaults to ``true``. If this is set, the popup can be closed by clicking into the background outside of the popup. For the **non-Pro-version**, the value is always ``true``.
 
 ## Styling
+(**Pro-version only**)
+
 Styling works by defining a class ``swal2Popup`` in your theme editor. Here is an example with some commonly used styling elements:
 ```
 .swal2Popup {
