@@ -104,9 +104,9 @@ and content is not changed by this operation.
 <br>
 
 ### Save Cropped Image
-Uploads the crop area of the image to the Backendless file system. 
+Uploads the cropped area of the image to the Backendless file system. 
 
-**Pro-version only**: An image can be scaled along its width or height dimension and the image encoding type can be chosen (jpeg, webp, png, etc.). For image types supporting lossy compression (e.g. jpeg, webp) the amount of compression can be specified.
+An image can be scaled along its width or height dimension and the image encoding type can be chosen (jpeg, webp, png, etc.). For image types supporting lossy compression (e.g. jpeg, webp) the amount of compression can be specified. **Scaling, changing image types and choosing a compression ratio is available in the Pro-version only**: 
 
 *Input parameters:*
 - ``File Name``: Optional. The name of the file to be saved (including file extension). If omitted, the name of the selected file is used, where the file extension is set according to the input parameter ``Image Type``. If an image is pasted from the clipboard and ``File Name`` is omitted, a name "fromClipboard``wxyz``.png" is generated, where ``wxyz`` is a random 4-digit number.
@@ -114,7 +114,7 @@ Uploads the crop area of the image to the Backendless file system.
 - ``Overwrite``: Optional. Default value is ``false``. Indicates that an existing file with the same name shall be overwritten (``Overwrite = true``), or whether an error shall be raised..
 - ``Scaling Dimension``: (**Pro-version only**) Optional. Valid values are "width" and "height". Before uploading the image to the Backendless file system, it can be scaled along either its width or height dimension. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixels`` is specified, the extracted or saved image will not be scaled.
 - ``Scaling Pixels``: (**Pro-version only**) Optional. The amount of pixels to be set for the selected scaling dimension. The number of pixels for the other dimension is computed in a way that does not change the image aspect ratio. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixels`` is specified, the extracted or saved image will not be scaled.
-- ``Compression Ratio``: (**Pro-version only**) Optional. A number between 0 and 1. The default is 0.8. Is applied if the resulting image type supports lossy compression (e.g., jpg or webp).
+- ``Compression Ratio``: (**Pro-version only**) Optional. A number between 0 and 1. The default is 0.8 (also for the non-Pro-version). Is applied if the resulting image type supports lossy compression (e.g., jpg or webp).
 - ``Image Type``: (**Pro-version only**) Optional. The image encoding type ("jpg", "png", etc.) of images extracted from the canvas. If omitted, the type is taken from the specified filename.
 
 *Return value:*
@@ -129,7 +129,7 @@ Uploads the crop area of the image to the Backendless file system.
 ### Get Cropped Image
 (**Pro-version only**)
 
-Extracts the image from the canvas out of the current cropping area. The image can be further processed by Backendless codeless logic.
+Extracts the image from the current cropping area. The image can be further processed by Backendless codeless logic.
 
 *Input parameters:*
 The input parameters are the same as for the action ``Save Cropped Image``. Just the file-related parameters are missing.
@@ -156,6 +156,8 @@ This example shows how to crop an image and save it to the Backendless file syst
 ### Reset
 The canvas area is set back to its initial empty state.
 
+![Canvas Reset](./assets/reset.png)
+
 <br>
 
 ## Events
@@ -172,16 +174,18 @@ Each time a new image is selected or pasted, this event handler is invoked. It p
 ### On Paste Error
 (**Pro-version only**)
 
-The ``Paste from Clipboard`` action is an asynchronous operation. Therefore, error handling is provided via an event handler. If an error during pasting occurrs, or if there is no image in the clipboard, this event handler is invoked. The passed ``error`` object has properties ``code`` and ``message``. See section "Error handling" below.
+The ``Paste from Clipboard`` action is an asynchronous operation. Therefore, error handling is provided by an event handler. If an error during pasting occurrs, or if there is no image in the clipboard, this event handler is invoked. The passed ``error`` object has properties ``code`` and ``message``. See section "Error handling" below.
 
 ![On Paste Error](./assets/onPasteError.png)
 
 <br>
 
 ## Error handling
-Whenever you use codeless blocks to call component actions, you should wrap them by a ``try/catch`` block. Actions throw an error object which contain a ``code`` and a ``message`` property.
+Whenever you use codeless blocks to call component actions, you should wrap them by a ``try/catch`` block. Actions throw an error object which contains a ``code`` and a ``message`` property.
 
 ![Error handling sample](./assets/errorSample1.png)
+
+<br>
 
 ### Error handling for "Paste from Clipboard" action
 (**Pro-version only**)
