@@ -165,7 +165,7 @@ The canvas area is set back to its initial empty state.
 ### On Image Loaded
 (**Pro-version only**)
 
-Each time a new image is selected or pasted, this event handler is invoked. It provides information on the image and the file which has been selected.
+Each time a new image is selected or pasted, this event handler is invoked. It provides information about the image and the file which has been selected.
 
 ![On Image Loaded](./assets/onImageLoaded.png)
 
@@ -194,7 +194,7 @@ The ``Paste from Clipboard`` action is special because it runs asynchronously. T
 
 <br>
 
-### Table of defined errors
+### Table of error codes and messages
 
 | Code  |  Message                            |
 | ----- | ----------------------------------- |
