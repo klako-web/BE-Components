@@ -1,6 +1,6 @@
-# KK-Popup
+# EndlessPopup
 
-This is the documentation for ``KK-Popup`` and ``KK-PopupPro``.
+This is the documentation for ``EndlessPopup`` and ``EndlessPopupPro``.
 
 ## Use Cases
 Create popups and toasts.
@@ -133,6 +133,6 @@ Styling affects all instances of this custom component in your application.
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ``KK-Popup`` and ``KK-PopupPro``:
+This product includes the following external code libraries/components, which are not owned by the author of ``EndlessPopup`` and ``EndlessPopupPro``:
 
 - [Sweetalert2](https://sweetalert2.github.io/). Licensed under the [MIT License](https://github.com/sweetalert2/sweetalert2/blob/main/LICENSE).

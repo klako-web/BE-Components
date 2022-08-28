@@ -1,6 +1,6 @@
-# KK-ImageUploader
+# EndlessImageUploader
 
-This is the documentation for ``KK-ImageUploader`` and ``KK-ImageUploaderPro``.
+This is the documentation for ``EndlessImageUploader`` and ``EndlessImageUploaderPro``.
 
 ## Use Cases
 - Select an image from local file system, camera
@@ -207,6 +207,6 @@ The ``Paste from Clipboard`` action is special because it runs asynchronously. T
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ``KK-ImageUploader`` and ``KK-ImageUploaderPro``:
+This product includes the following external code libraries/components, which are not owned by the author of ``EndlessImageUploader`` and ``EndlessImageUploaderPro``:
 
 - [Cropper.js](https://fengyuanchen.github.io/cropperjs/): Licensed under the [MIT License](https://github.com/fengyuanchen/cropperjs/blob/main/LICENSE).
