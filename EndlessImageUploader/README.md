@@ -16,7 +16,7 @@ This is the documentation for ``EndlessImageUploader`` and ``EndlessImageUploade
 <br>
 
 > ---
->**Disclaimer**: This component is not released for productive use yet. No warranties!
+>**Disclaimer**: This component is not released for productive use yet. No warranties! If you receive a copy of component code from the component author, you are allowed to leverage it for evaluation purposes only. It is not allowed to distribute this code. 
 > ---
 
 <br>
