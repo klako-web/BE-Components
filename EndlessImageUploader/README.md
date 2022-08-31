@@ -23,7 +23,7 @@ This is the documentation for ``EndlessImageUploader`` and ``EndlessImageUploade
 
 ## General usage
 1. Place a Block-UI-component on a page where you want to display the preview of an image to be uploaded. Adjust the dimensions and other properties of this Block-component to your needs.
-2. Place the custom component ``KK_ImageUploader`` or ``KK_ImageUploaderPro`` into the Block-component. 
+2. Place the custom component ``EndlessImageUploader`` or ``EndlessImageUploaderPro`` into the Block-component. 
 3. Fill the ``Id`` property of the custom component in the side panel. Otherwise, you will not be able to work with actions.
 4. Place buttons on your page. In the respective "On Click Event"-handlers call one of the custom component actions. An example how this can look like is shown here:
 
