@@ -3,7 +3,7 @@
 This is the documentation for ``EndlessImageUploader`` and ``EndlessImageUploaderPro``.
 
 ## Use Cases
-- Select an image from local file system, camera
+- Select an image from local file system, or mobile device camera
 - Paste an image from clipboard (**Pro-version only**)
 - Rotate the image
 - Zoom in/out
@@ -36,7 +36,9 @@ By default, a resizable crop box is shown after an image has been selected or pa
 ## Properties
 
 ### Display
-(**Pro-version only**) Boolean. If unchecked, no image preview is shown. Therefore, a user cannot change the cropping area. Unchecking this property makes monstly sense only when checking ``No Crop Box`` at the same time.
+(**Pro-version only**) Boolean. If unchecked, no image preview is shown. Therefore, a user cannot change the cropping area. Unchecking this property makes monstly sense only when checking ``No Crop Box`` at the same time. In conjunction with the event handler for ``On Image Loaded``, an image can be selected, scaled and uploaded without preview and user-triggered save action. An event handler implementing this use case is shown here:
+
+![sample](./assets/passThrough.png)
 
 ### No Crop Box
 (**Pro-version only**) Boolean. If checked, no resizable crop area is shown above the image. Still, parts of the image can be cropped, by zooming-in and moving the image along the canvas. The save and crop action will then crop the visible part of the image.
