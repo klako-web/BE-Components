@@ -36,15 +36,17 @@ By default, a resizable crop box is shown after an image has been selected or pa
 ## Properties
 
 ### Display
-(**Pro-version only**) Boolean. If unchecked, no image preview is shown. Therefore, a user cannot change the cropping area. Unchecking this property makes monstly sense only when checking ``No Crop Box`` at the same time. In conjunction with the event handler for ``On Image Loaded``, an image can be selected, scaled and uploaded without preview and user-triggered save action. An event handler implementing this use case is shown here:
+(**Pro-version only**) Boolean. If unchecked, no image preview is shown. Therefore, a user cannot change the cropping area. In conjunction with the event handler for ``On Image Loaded``, an image can be selected, scaled and uploaded without preview and without the need for a user-triggered save action. An event handler implementing this use case is shown here:
 
 ![sample](./assets/passThrough.png)
+
+Unchecking the ``Display`` property makes sense only when checking ``No Crop Box`` at the same time. Otherwise, only a part of the image (the crop area) will be saved.
 
 ### No Crop Box
 (**Pro-version only**) Boolean. If checked, no resizable crop area is shown above the image. Still, parts of the image can be cropped, by zooming-in and moving the image along the canvas. The save and crop action will then crop the visible part of the image.
 
 ### Min Canvas Width
-(**Pro-version only**) By default, the canvas size is set to the size of loaded image, of course within the constraints set by the surrounding Block-UI-component. If you deal with very small image, it can make sense to set a minimal canvas size in pixel. It is recommended to then either set ``Min Canvas Width`` or ``Min Canvas Height``. The property which is not set will be computed to match the image width-to-height ratio.
+(**Pro-version only**) By default, the canvas size is set to the size of loaded image, of course within the constraints set by the surrounding Block-UI-component. If you deal with very small image, it can make sense to set a minimal canvas size in pixel. It is recommended to then either set ``Min Canvas Width`` or ``Min Canvas Height``. The property which is not set will be computed to conserve the image width-to-height ratio.
 
 ### Min Canvas Height
 (**Pro-version only**) See ``Min Canvas Width``.
