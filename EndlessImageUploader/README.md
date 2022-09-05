@@ -214,6 +214,7 @@ The ``Paste from Clipboard`` action is special because it runs asynchronously. T
 | 107   | A path parameter must be specified  |
 | 108   | Filename must include a file extension  |
 | 109   | Extracted image type must match desired filename extension |
+| 110   | Clipboard contains no image data (3) |
 
 <br>
 
