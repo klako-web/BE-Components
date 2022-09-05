@@ -2,6 +2,9 @@
 
 This is the documentation for ``EndlessImageUploader`` and ``EndlessImageUploaderPro``.
 
+![icon](./assets/icon.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
+![icon](./assets/iconPro.jpg)
+
 ## Use Cases
 - Select an image from local file system, or mobile device camera
 - Paste an image from clipboard (**Pro-version only**)
