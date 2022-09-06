@@ -2,8 +2,8 @@
 
 This is the documentation for ``EndlessPopup`` and ``EndlessPopupPro``.
 
-![icon](./assets/iconPopup.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
-![iconPro](./assets/iconPopupPro.jpg)
+![Icon](./assets/IconPopup.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
+![IconPro](./assets/IconPopupPro.jpg)
 
 ## Use Cases
 Create popups and toasts.
