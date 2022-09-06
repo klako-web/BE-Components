@@ -91,6 +91,12 @@ Popup window background color.
 ### Allow Outside Click
 (**Pro-version only**) Defaults to ``true``. If this is set, the popup can be closed by clicking into the background outside of the popup. For the **non-Pro-version**, the value is always ``true``.
 
+### Show Class
+(**Pro-version only**) A CSS-animation class which is used for popup or toast appearance. See section [Animations](#Animations).
+
+### Hide Class
+(**Pro-version only**) A CSS-animation class which is used for popup or toast disappearance. See section [Animations](#Animations).
+
 ## Styling
 (**Pro-version only**)
 
@@ -134,6 +140,11 @@ The class must be composed of specific subclasses. Here is an example with some 
   }
 }
 ```
+<br>
+
+## Animations
+(**Pro-version only**)
+By using the properties ``Show Class`` and ``Hide Class``, CSS-classes can be configured which control the animation behavior when showing and hiding a popup or toast. Animation classes can be defined in the Theme-Editor of Backendless UI-Builder.
 
 <br>
 
