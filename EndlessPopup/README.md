@@ -94,9 +94,13 @@ Popup window background color.
 ## Styling
 (**Pro-version only**)
 
-Styling works by defining a class ``swal2Popup`` in your theme editor. Here is an example with some commonly used styling elements:
-```
-.swal2Popup {
+Styling works by defining a class in your theme editor. The name of the class is entered into the field ``Classes`` of your component instance configuration:
+
+![Class configuration](./assets/classes.png)
+
+The class must be composed of specific subclasses. Here is an example with some commonly used styling elements:
+```css
+.myPopupClass {
   .swal2-title {
     color: red;
     background: blue;
@@ -130,9 +134,7 @@ Styling works by defining a class ``swal2Popup`` in your theme editor. Here is a
   }
 }
 ```
-Styling affects all instances of this custom component in your application.
 
-<br>
 <br>
 
 ## Reused libraries and components
