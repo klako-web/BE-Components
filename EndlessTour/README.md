@@ -6,7 +6,10 @@ This is the documentation for ``EndlessTour`` and ``EndlessTourPro``.
 ![IconPro](./assets/iconTourPro.jpg)
 
 ## Use Cases
-Onboard your user to your app. Provide guidance for UI elements on your page in a step-by-step, interactive tour.
+Onboard your user to your app. Provide guidance for UI elements on your page in a step-by-step, interactive tour. Start the below video to see a demo:
+
+
+https://user-images.githubusercontent.com/69795385/188916715-0b5e0aa4-6fe7-405e-a578-618a7fd7f86a.mp4
 
 >**Disclaimer**: This component is not released for productive use yet. No warranties!
 
@@ -17,8 +20,6 @@ Onboard your user to your app. Provide guidance for UI elements on your page in 
 
 <br>
 
-
-https://user-images.githubusercontent.com/69795385/188916715-0b5e0aa4-6fe7-405e-a578-618a7fd7f86a.mp4
 
 
 ## Actions
