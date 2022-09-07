@@ -17,6 +17,10 @@ Onboard your user to your app. Provide guidance for UI elements on your page in 
 
 <br>
 
+
+https://user-images.githubusercontent.com/69795385/188916715-0b5e0aa4-6fe7-405e-a578-618a7fd7f86a.mp4
+
+
 ## Actions
 For each nocode-block of an action, you have to select the ``Id`` of the custom component instance, which you placed on the page.
 
