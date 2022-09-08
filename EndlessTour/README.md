@@ -42,7 +42,7 @@ This action is exposed via a Backendless Codeless Block. See section [General us
 ## Properties
 
 ### Classes
-Can be used to style the tooltips by entering a CSS-class defined in the Theme-editor of UI-Builder. Only one class is considered for styling. See section [Styling](#styling) for an example.
+**(Pro-version only)** Can be used to style the tooltips by entering a CSS-class defined with the Theme-editor of UI-Builder. Only one class is considered for styling. See section [Styling](#styling) for an example.
 
 ### Next Step Label
 **(Pro-version only)** The text label on the button which triggers the next step of a tour. Can contain HTML-tags. This label can be set by a logic handler or by data binding.
@@ -54,28 +54,28 @@ Can be used to style the tooltips by entering a CSS-class defined in the Theme-e
 **(Pro-version only)** The text label on the "Done"-button which is shown for the last step of a tour. Can contain HTML-tags. This label can be set by a logic handler or by data binding.
 
 ### Show Step Numbers
-The number of the current step is shown in tooltip together with the total number of steps (e.g. "2 of 5").
+If checked, the number of the current step is shown in tooltip together with the total number of steps (e.g. "2 of 5").
 
 ### Step Number Separator
-The word "of" seperating step numbers by default can be changed to support any language. This word can be set by a logic handler or by data binding.
+**(Pro-version only)** The word "of" seperating step numbers by default can be changed to support any language. This word can be set by a logic handler or by data binding.
 
 ### Show Progress Bullets
-The tour progress is shown by a set of clickable bullets.
+If checked, the tour progress is shown by a set of clickable bullets.
 
 ### Show Progress Bar
-The tour progress is shown by a progress bar.
+If checked, the tour progress is shown by a progress bar.
 
 ### Keyboard Navigation
-**(Pro-version only)** The tour can be stepped through with a keyboard. The arrow-keys and the enter-key can be used.
+**(Pro-version only)** If checked, the tour can be stepped through with a keyboard. The arrow-keys and the enter-key can be used.
 
 ### Exit On Exc
-**(Pro-version only)** The Escape-key (Esc) can be used to exit from the tour at any time.
+**(Pro-version only)** If checked, the Escape-key (Esc) can be used to exit from the tour at any time.
 
 ### Exit on Background Click
-**(Pro-version only)** The tour can be exited by clicking outside of the tooltip.
+**(Pro-version only)** If checked, the tour can be exited by clicking outside of the tooltip.
 
 ### Don't Show Again
-**(Pro-version only)** If this checkbox is set, each tooltip offers the option to not start the tour the next time, even if the ``Start``-action is called. The ``EndlessTour`` stores a cookie on the user's browser, by which it recognizes that the next ``Start``-action shall be ignored. To re-activate the tour, the cookie must be deleted, or its lifetime must be expired.
+**(Pro-version only)** If checked, each tooltip offers the option to not start the tour the next time, even if the ``Start``-action is called. The ``EndlessTour`` stores a cookie on the user's browser, by which it recognizes that the next ``Start``-action shall be ignored. To re-activate the tour, the cookie must be deleted, or its lifetime must be expired.
 
 ### Don't Show Again Label
 **(Pro-version only)** The label used in the tooltip when offering the option "Don't Show Again". This label can be set by a logic handler or by data binding.
