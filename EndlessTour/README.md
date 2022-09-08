@@ -27,12 +27,12 @@ https://user-images.githubusercontent.com/69795385/188916715-0b5e0aa4-6fe7-405e-
 The Action ``Start`` receives the parameter ``Step List`` which must be a list of objects. Each object represents one step of the tour. Each object in the list can contain the following properties:
 - ``title`` (optional): The title of the tooltip for a step. Can contain HTML-tags.
 - ``anchor`` (optional): The ``Id`` of the HTML-element to which the tooltip shall relate to. Currently, in Backendless UI-Builder, anchors can be assigned to Block-UI-Elements only.Therefore, if you want to show a tooltip for a single UI-element or a group of UI-elements, you have to wrap them by a Block and assign an anchor to this block. If you don't pass the ``anchor``-parameter to  the ``Start``-action, the tooltip will be centered on the page without any relation to a UI-element.
-- ``message``: The information you want to convey by the tooltip. Can contain HTML-syntax, for instance, image and link-tags.
+- ``message``: The information you want to convey by the tooltip. Can contain HTML, for instance, image- and link-tags.
 
 <br>
 
 ## Actions
-For each nocode-block of an action, you have to select the ``Id`` of the custom component instance, which you placed on the page.
+For each Codeless Block of an action, you have to select the ``Id`` of the custom component instance, which you placed on the page.
 
 ### Start
 This action is exposed via a Backendless Codeless Block. See section [General usage](#general-usage) for an example. The block parameter has to be set to the ``Id`` of a component instance on the page.

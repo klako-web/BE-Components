@@ -57,7 +57,7 @@ Unchecking the ``Display`` property makes sense only when checking ``No Crop Box
 <br>
 
 ## Actions
-For each nocode-block of an action, you have to select the ``Id`` of the custom component instance, which you placed on the page.
+For each Codeless Block of an action, you have to select the ``Id`` of the custom component instance, which you placed on the page.
 
 ### Select
 *Input parameters:* None
