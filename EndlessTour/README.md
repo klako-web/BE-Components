@@ -143,7 +143,3 @@ Create a class in the theme editor of UI-Builder. Enter the name of this class i
 ## Restrictions
 - The ``Display`` property of a component instance is not evaluated.
 
-## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ``EndlessPopup`` and ``EndlessPopupPro``:
-
-- [Sweetalert2](https://sweetalert2.github.io/). Licensed under the [MIT License](https://github.com/sweetalert2/sweetalert2/blob/main/LICENSE).
