@@ -1,6 +1,6 @@
-# EndlessTour
+# Endless Tour
 
-This is the documentation for ``EndlessTour`` and ``EndlessTourPro``.
+This is the documentation for ``Endless Tour`` and ``Endless Tour Pro``.
 
 ![Icon](./assets/iconTour.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
 ![IconPro](./assets/iconTourPro.jpg)

@@ -1,6 +1,6 @@
-# EndlessImageUploader
+# Endless Image Uploader
 
-This is the documentation for ``EndlessImageUploader`` and ``EndlessImageUploaderPro``.
+This is the documentation for ``Endless Image Uploader`` and ``Endless Image Uploader Pro``.
 
 ![Icon](./assets/Icon.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
 ![IconPro](./assets/IconPro.jpg)
@@ -228,6 +228,6 @@ The ``Paste from Clipboard`` action is special because it runs asynchronously. T
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ``EndlessImageUploader`` and ``EndlessImageUploaderPro``:
+This product includes the following external code libraries/components, which are not owned by the author of ``Endless Image Uploader`` and ``Endless Image Uploader Pro``:
 
 - [Cropper.js](https://fengyuanchen.github.io/cropperjs/): Licensed under the [MIT License](https://github.com/fengyuanchen/cropperjs/blob/main/LICENSE)

@@ -1,6 +1,6 @@
-# EndlessPopup
+# Endless Popup
 
-This is the documentation for ``EndlessPopup`` and ``EndlessPopupPro``.
+This is the documentation for ``Endless Popup`` and ``Endless Popup Pro``.
 
 ![Icon](./assets/IconPopup.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
 ![IconPro](./assets/IconPopupPro.jpg)
@@ -149,6 +149,6 @@ By using the properties ``Show Class`` and ``Hide Class``, CSS-classes can be co
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ``EndlessPopup`` and ``EndlessPopupPro``:
+This product includes the following external code libraries/components, which are not owned by the author of ``Endless Popup`` and ``Endless Popup Pro``:
 
 - [Sweetalert2](https://sweetalert2.github.io/). Licensed under the [MIT License](https://github.com/sweetalert2/sweetalert2/blob/main/LICENSE).
