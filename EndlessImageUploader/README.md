@@ -51,7 +51,7 @@ Unchecking the ``Display`` property makes sense only when checking ``No Crop Box
 ### Min Canvas Width
 (**Pro-version only**) By default, the canvas size is set to the size of loaded image, of course within the constraints set by the surrounding Block-UI-component. If you deal with very small image, it can make sense to set a minimal canvas size in pixel. It is recommended to then either set ``Min Canvas Width`` or ``Min Canvas Height``. The property which is not set will be computed to conserve the image width-to-height ratio.
 
-### Min Canvas Height
+### Max Canvas Height
 (**Pro-version only**) See ``Min Canvas Width``.
 
 <br>
