@@ -16,6 +16,8 @@ This is the documentation for ``Endless Image Cropper`` and ``Endless Image Crop
 - Change image type of original image to jpg, png, webp, etc. (**Pro-version only**)
 - Select the cropping result for further processing by Backendless nocode logic (**Pro-version only**).
 
+All processing is done in the browser client. So, no transfer of original, large files to the backendbackend just to process them there and to delete them afterwards.
+
 <br>
 
 > ---
