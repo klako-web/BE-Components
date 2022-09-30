@@ -1,6 +1,6 @@
-# Endless Image Uploader
+# Endless Image Cropper
 
-This is the documentation for ``Endless Image Uploader`` and ``Endless Image Uploader Pro``.
+This is the documentation for ``Endless Image Cropper`` and ``Endless Image Cropper Pro``.
 
 ![Icon](./assets/Icon.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
 ![IconPro](./assets/IconPro.jpg)
@@ -26,7 +26,7 @@ This is the documentation for ``Endless Image Uploader`` and ``Endless Image Upl
 
 ## General usage
 1. Place a Block-UI-component on a page where you want to display the preview of an image to be uploaded. Adjust the dimensions and other properties of this Block-component to your needs.
-2. Place the custom component ``EndlessImageUploader`` or ``EndlessImageUploaderPro`` into the Block-component. 
+2. Place the custom component ``Endless Image Cropper`` or ``Endless Image Cropper Pro`` into the Block-component. 
 3. Fill the ``Id`` property of the custom component in the side panel. Otherwise, you will not be able to work with actions.
 4. Place buttons on your page. In the respective "On Click Event"-handlers call one of the custom component actions. An example how this can look like is shown here:
 
@@ -228,6 +228,6 @@ The ``Paste from Clipboard`` action is special because it runs asynchronously. T
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ``Endless Image Uploader`` and ``Endless Image Uploader Pro``:
+This product includes the following external code libraries/components, which are not owned by the author of ``Endless Image Cropper`` and ``Endless Image Cropper Pro``:
 
 - [Cropper.js](https://fengyuanchen.github.io/cropperjs/): Licensed under the [MIT License](https://github.com/fengyuanchen/cropperjs/blob/main/LICENSE)
