@@ -88,6 +88,21 @@ If checked, the tour progress is shown by a progress bar.
 
 <br>
 
+## Events
+
+### On Before Change
+(**Pro-version only**)
+
+Each time a new step is going to become active, this event handler is called. The context blocks ``nextStep``, ``noSteps`` and ``nextElement`` are available.
+
+![On Image Loaded](./assets/onBeforeChange.png)
+
+``nextElement`` is a reference to the DOM-element which has been linked to next tour step.
+
+The handler returns a boolean value. Returning ``true`` causes the next step to become active. Returning ``false`` prevents from setting the next step active. In this case, the current step is kept active.
+
+<br>
+
 ## Styling
 (**Pro-version only**)
 Create a class in the theme editor of UI-Builder. Enter the name of this class into the ``Classes`-property field of your component instance. The following example shows how to style the tooltip elements:
