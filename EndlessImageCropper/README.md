@@ -1,6 +1,6 @@
 # Endless Image Cropper
 
-This is the documentation for ``Endless Image Cropper`` and ``Endless Image Cropper Pro``.
+This is the documentation for the UI components ``Image Cropper`` and ``Image Cropper Pro`` for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 ![Icon](./assets/Icon.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
 ![IconPro](./assets/IconPro.jpg)
