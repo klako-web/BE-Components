@@ -1,6 +1,6 @@
-# Endless Tour
+# Endless Info Tours
 
-This is the documentation for ``Endless Tour`` and ``Endless Tour Pro``.
+This is the documentation for the UI components``Info Tour`` and ``Info Tour Pro`` for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 ![Icon](./assets/iconTour.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
 ![IconPro](./assets/iconTourPro.jpg)
@@ -75,7 +75,7 @@ If checked, the tour progress is shown by a progress bar.
 **(Pro-version only)** If checked, the tour can be exited by clicking outside of the tooltip.
 
 ### Don't Show Again
-**(Pro-version only)** If checked, each tooltip offers the option to not start the tour the next time, even if the ``Start``-action is called. The ``EndlessTour`` stores a cookie on the user's browser, by which it recognizes that the next ``Start``-action shall be ignored. To re-activate the tour, the cookie must be deleted, or its lifetime must be expired.
+**(Pro-version only)** If checked, each tooltip offers the option to not start the tour the next time, even if the ``Start``-action is called. The ``Info Tour`` stores a cookie on the user's browser, by which it recognizes that the next ``Start``-action shall be ignored. To re-activate the tour, the cookie must be deleted, or its lifetime must be expired.
 
 ### Don't Show Again Label
 **(Pro-version only)** The label used in the tooltip when offering the option "Don't Show Again". This label can be set by a logic handler or by data binding.
