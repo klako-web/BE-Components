@@ -1,6 +1,6 @@
 # Endless Info Tours
 
-This is the documentation for the UI components``Info Tour`` and ``Info Tour Pro`` for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
+This is the documentation for the UI components ``Info Tour`` and ``Info Tour Pro`` for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 ![Icon](./assets/iconTour.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
 ![IconPro](./assets/iconTourPro.jpg)
@@ -18,16 +18,16 @@ https://user-images.githubusercontent.com/69795385/188916715-0b5e0aa4-6fe7-405e-
 <br>
 
 ## General usage
-- Place the component somewhere on a page. There will be no visible reflection in the preview. Don't worry.
+- Place the component somewhere on a page. There will be no immediate visible reflection in the published preview or in the published app. Don't worry.
 - Fill the ``Id`` property of the component in the side panel. Otherwise, you will not be able to work with actions
-- To trigger a tour you have to use the Action ``Start Tour``, for instance within an On-Click-Handler of a button:
+- To trigger a tour, use the Action ``Start``, for instance within an On-Click-Handler of a button:
 
 ![On Click Handler](./assets/onClickHandler.png)
 
 The Action ``Start`` receives the parameter ``Step List`` which must be a list of objects. Each object represents one step of the tour. Each object in the list can contain the following properties:
 - ``title`` (optional): The title of the tooltip for a step. Can contain HTML-tags.
 - ``anchor`` (optional): The ``Id`` of the HTML-element to which the tooltip shall relate to. Currently, in Backendless UI-Builder, anchors can be assigned to Block-UI-Elements only.Therefore, if you want to show a tooltip for a single UI-element or a group of UI-elements, you have to wrap them by a Block and assign an anchor to this block. If you don't pass the ``anchor``-parameter to  the ``Start``-action, the tooltip will be centered on the page without any relation to a UI-element.
-- ``message``: The information you want to convey by the tooltip. Can contain HTML, for instance, image- and link-tags.
+- ``message``: The information you want to convey by the tooltip. Can contain HTML, for instance, ``<image>`` and ``<link>``-tags, or any HTML-formatting.
 
 <br>
 

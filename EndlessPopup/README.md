@@ -1,6 +1,6 @@
-# Endless Popup
+# Endless Popups
 
-This is the documentation for ``Endless Popup`` and ``Endless Popup Pro``.
+This is the documentation for the UI components ``Popup`` and ``Popup Pro`` for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 ![Icon](./assets/IconPopup.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
 ![IconPro](./assets/IconPopupPro.jpg)
@@ -63,15 +63,15 @@ Defaults to ``false``
 Defaults to ``false``
 
 ### Show as Toast
-Defaults to ``false``. A "Toast" is a little message box which shows information for a limited amount of time. Use the ``Duration``-property to control how long the toast is shown. It is recommended to run the toast as an asynchronous operation:
+Defaults to ``false``. A "Toast" is a little message box which shows information for a limited amount of time. Use the ``Duration``-property to control how long the toast is shown. For the **free version**, this interval is fixed at 2000 ms. It is recommended to run the toast as an asynchronous operation:
 
 ![Asynch Toast](./assets/toast.png)
 
 ### Duration
-(**Pro-version only**) Controls how long a popup or toast is shown in milliseconds. For the **non-Pro-version**, this interval is fixed at 2000 ms.
+(**Pro-version only**) Controls how long a popup or toast is shown in milliseconds. For the **free version**, this interval is fixed at 2000 ms.
 
 ### Position
-(**Pro-version only**) Postion of the popup on the screen. Can be ``Top``, ``Top Left``, ``Top Right``, ``Center``, ``Center Left``, ``Center Right``, ``Bottom``, ``Bottom Left``, ``Bottom Right``. For the **non-Pro-version**, the position is always ``Center``.
+(**Pro-version only**) Postion of the popup on the screen. Can be ``Top``, ``Top Left``, ``Top Right``, ``Center``, ``Center Left``, ``Center Right``, ``Bottom``, ``Bottom Left``, ``Bottom Right``. For the **free version**, the position is always ``Center``.
 
 ### Width
 Popup window width, including paddings (box-sizing: border-box). Can be in any CSS unit (e.g, ``px``, ``em``, ``rem``, ``%``). Defaults to ``32em``.
