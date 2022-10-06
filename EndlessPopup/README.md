@@ -97,49 +97,76 @@ Popup window background color.
 ### Hide Class
 (**Pro-version only**) A CSS-animation class which is used for popup or toast disappearance. See section [Animations](#Animations).
 
-## Styling
-(**Pro-version only**)
-
-Styling works by defining a class in your theme editor. The name of the class is entered into the field ``Classes`` of your component instance configuration:
-
-![Class configuration](./assets/classes.png)
-
-The class must be composed of specific subclasses. Here is an example with some commonly used styling elements:
-```css
-.myPopupClass {
-  .swal2-title {
-    color: red;
-    background: blue;
-    font-size: 22px;
-    padding-bottom: 12px;
-  }
-  .swal2-icon.swal2-warning {
-    background-color: #3fc3ee;
-    border-color: #018786;
-    color: #b00020;
-  }
-  .swal2-image {
-    margin: 2em auto 1em;
-  }
-  .swal2-html-container {  // the popup/toast content
-    text-align: left !important;
-    font-size: 2em !important;
-  }
-  .swal2-actions {   // the button box
-    flex-wrap: wrap;
-    align-items: center;
-    .swal2-deny {
-      border-color: black;
-      border-style: solid;
-      border-width: 3px;
-    }
-  }
-  .swal2-footer {
-    color: yellow;
-    background: grey;
-  }
-}
+## Styles
+(**Pro-version only**) Create a theme extension and change one of the following variables:
 ```
+@el-popup-title-color: inherit; 
+@el-popup-title-maxWidth: 100%;
+@el-popup-title-margin: 0;
+@el-popup-title-padding: 0.3em 1em 0.3em;
+@el-popup-title-fontSize: 1.6em;
+@el-popup-title-fontWeight: 600;
+@el-popup-title-fontStyle: normal;
+@el-popup-title-textAlign: center;
+@el-popup-title-wordWrap: break-word;
+@el-popup-title-backgroundColor: inherit;
+ 
+@el-popup-icon-width:  5em;
+@el-popup-icon-height: 5em;
+@el-popup-icon-margin: 2em auto 0.6em;
+
+@el-popup-iconWarning-backgroundColor:  inherit;
+@el-popup-iconInfo-backgroundColor:     inherit;
+@el-popup-iconError-backgroundColor:    inherit;
+@el-popup-iconSuccess-backgroundColor:  inherit;
+
+@el-popup-image-margin: 2em auto 1em;
+
+@el-popup-content-textAlign: center; 
+@el-popup-content-fontSize: 1em; 
+@el-popup-content-fontWeight: 400; 
+@el-popup-content-fontStyle: normal; 
+@el-popup-content-margin: 1em 1.6em 0.3em;
+@el-popup-content-padding: 0.3em 0.1em 0.3em;
+@el-popup-content-color: inherit;
+@el-popup-content-backgroundColor:  inherit;
+
+@el-popup-actions-margin: 1.25em auto 0;
+@el-popup-actions-padding: 0 0 0 0;
+
+@el-popup-actionConfirm-borderStyle: initial;
+@el-popup-actionConfirm-borderColor: initial;
+@el-popup-actionConfirm-borderWidth: 0px;
+@el-popup-actionConfirm-color: #fff;
+@el-popup-actionConfirm-backgroundColor: #7066e0;
+
+@el-popup-actionDeny-borderStyle: initial;
+@el-popup-actionDeny-borderColor: initial;
+@el-popup-actionDeny-borderWidth: 0px;
+@el-popup-actionDeny-color: #fff;
+@el-popup-actionDeny-backgroundColor: #dc3741;
+
+@el-popup-actionCancel-borderStyle: initial;
+@el-popup-actionCancel-borderColor: initial;
+@el-popup-actionCancel-borderWidth: 0px;
+@el-popup-actionCancel-color: #fff;
+@el-popup-actionCancel-backgroundColor: #6e7881;
+
+@el-popup-actionClose-color: #ccc;
+@el-popup-actionClose-fontSize: 2.5em;
+@el-popup-actionClose-margin: 0 0 -1.4em;
+
+@el-popup-footer-fontSize: 0.85em;
+@el-popup-footer-fontWeight: initial; 
+@el-popup-footer-fontStyle: normal;
+@el-popup-footer-color: inherit;
+@el-popup-footer-backgroundColor: inherit;
+@el-popup-footer-padding: 0.5em 0.5em 0em;
+@el-popup-footer-margin: 1.2em 1em 0em;
+@el-popup-footer-justifyContent: center;
+@el-popup-footer-borderTop: 1px solid #eee;
+```
+
 <br>
 
 ## Animations
