@@ -5,12 +5,12 @@ This is the documentation for the UI components ``Info Tour`` and ``Info Tour Pr
 ![Icon](./assets/iconTour.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
 ![IconPro](./assets/iconTourPro.jpg)
 
->**Disclaimer**: This component is not released for productive use yet. No warranties!
+>**Disclaimer**: No support will be provided for the free (non-PRO) version of this component!
 
 <br>
 
 ## Use Cases
-Onboard your user to your app. Provide guidance for UI elements on your page in a step-by-step, interactive tour showing tooltips for each relevant screen area. Start the below video to see a demo:
+Onboard your users to your app. Provide guidance for UI elements on your page in a step-by-step, interactive tour showing tooltips for each relevant screen area. Start the below video to see a demo:
 
 
 https://user-images.githubusercontent.com/69795385/188916715-0b5e0aa4-6fe7-405e-a578-618a7fd7f86a.mp4

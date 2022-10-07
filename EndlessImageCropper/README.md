@@ -20,9 +20,7 @@ All processing is done in the browser client. So, no transfer of original, large
 
 <br>
 
-> ---
->**Disclaimer**: This component is not released for productive use yet. No warranties! If you receive a copy of component code from the component author, you are allowed to leverage it for evaluation purposes only. It is not allowed to distribute this code. 
-> ---
+>**Disclaimer**: No support will be provided for the free (non-PRO) version of this component!
 
 <br>
 

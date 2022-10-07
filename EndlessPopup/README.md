@@ -8,7 +8,7 @@ This is the documentation for the UI components ``Popup`` and ``Popup Pro`` for 
 ## Use Cases
 Create popups and toasts.
 
->**Disclaimer**: This component is not released for productive use yet. No warranties!
+>**Disclaimer**: No support will be provided for the free (non-PRO) version of this component!
 
 ## General usage
 - Place the component somewhere on a page. There will be no visible reflection in the preview. Don't worry.

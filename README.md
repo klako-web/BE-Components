@@ -1,5 +1,2 @@
 # BE-Components
-My Custom Components for Backendless UI Builder
-
-
-Merely to develop documentation
+Documentation for my custom UI components for Backendless UI Builder (https://backendless.com)
