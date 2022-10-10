@@ -98,8 +98,8 @@ Popup window background color.
 (**Pro-version only**) A CSS-animation class which is used for popup or toast disappearance. See section [Animations](#Animations).
 
 ## Styles
-(**Pro-version only**) Create a theme extension and change one of the following variables:
-```
+(**Pro-version only**) Create a theme extension and change any of the following less-variables:
+```css
 @el-popup-title-color: inherit; 
 @el-popup-title-maxWidth: 100%;
 @el-popup-title-margin: 0;

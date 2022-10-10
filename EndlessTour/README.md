@@ -117,54 +117,55 @@ Note: when completing a tour, the event ``On Complete`` is called before the eve
 
 <br>
 
-## Styling
+## Styles
 (**Pro-version only**)
-Create a class in the theme editor of UI-Builder. Enter the name of this class into the ``Classes`-property field of your component instance. The following example shows how to style the tooltip elements:
+Create a theme extension in Backendless UI Builder to change any of the following less-variables:
 
 ```css
-.tourTooltip {
-  .introjs-tooltip-header {
-    .introjs-tooltip-title {
-      color: blue;
-    }
-    .introjs-skipbutton {
-      color: red;
-    }
-  }
-  .introjs-tooltiptext {
-    font-weight: bold;
-    font-style: italic;
-  }
-  .introjs-dontShowAgain label {
-    font-size: 12px ;
-    color: purple ;
-    font-weight: bold ;
-  }
-  .introjs-bullets ul li a.active {
-    width: 20px;
-    background: blue;
-  }
-  .introjs-progress {
-    background-color: aquamarine;
-    .introjs-progressbar {
-      background-color: navy;
-    }
-  }
-  .introjs-helperNumberLayer {
-    font-size: 11px;
-    color: RebeccaPurple;
-  }
-  .introjs-button {
-    font: 11px/normal sans-serif !important;
-    background-color: AntiqueWhite !important;
-  }
-  .introjs-disabled {
-    text-shadow: none !important;
-    font: 11px/normal sans-serif !important;
-    color: Grey !important;
-    background-color: GhostWhite !important;
-  }
-}
+@el-tour-backgroundColor: @appBackgroundColor;
+
+@el-tour-text-color:      contrast(@el-tour-backgroundColor);
+@el-tour-text-fontSize:   1em;
+@el-tour-text-fontWeight: inherit;
+@el-tour-text-fontStyle:  normal;
+@el-tour-text-textAlign:  left;
+@el-tour-text-padding:    1.2em;
+@el-tour-text-margin:     0;
+
+@el-tour-title-color: @el-tour-text-color;
+@el-tour-title-fontSize:   calc( @el-tour-text-fontSize * 1.2 );
+@el-tour-title-fontWeight: 600;
+@el-tour-title-fontStyle:  normal;
+@el-tour-title-textAlign:  left;
+@el-tour-title-padding:    0;
+@el-tour-title-margin:     0;
+
+@el-tour-skipButton-fontSize:   calc( @el-tour-text-fontSize * 1.5 );
+@el-tour-skipButton-fontWeight: 600;
+@el-tour-skipButton-color: lighten( @el-tour-text-color, 30% );
+
+@el-tour-dontShowAgain-padding: 0 1.5em;
+@el-tour-dontShowAgain-fontSize: calc( @el-tour-text-fontSize * 0.9 );
+@el-tour-dontShowAgain-color: lighten( @el-tour-text-color, 20% );
+@el-tour-dontShowAgain-checkboxSize: 0.85em;
+
+@el-tour-dontShowAgain-bulletsColor:  #ccc;
+@el-tour-dontShowAgain-bulletsWidth:  6px;
+@el-tour-dontShowAgain-bulletsHeight: 6px;
+@el-tour-dontShowAgain-bulletsColorActive:  #999;
+@el-tour-dontShowAgain-bulletsWidthActive:  16px;
+@el-tour-dontShowAgain-bulletsHeightActive: 6px;
+
+@el-tour-progressBar-background: #e0e0e0;;
+@el-tour-progressBar-color: #08c;
+
+@el-tour-stepNumbers-fontSize: calc( @el-tour-text-fontSize * 0.9 );
+@el-tour-stepNumbers-color: lighten( @el-tour-text-color, 20% );
+@el-tour-stepNumbers-padding: calc( @el-tour-text-fontSize * 0.7 );
+
+@el-tour-button-backgroundColor: #f4f4f4;
+@el-tour-button-color: @el-tour-text-color;;
+@el-tour-button-padding: 0.5rem 1rem;
 ```
 
 <br>
