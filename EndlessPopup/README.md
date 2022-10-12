@@ -87,7 +87,7 @@ Popup window background color.
 
 ## Styles
 (**Pro-version only**) Create a theme extension and change any of the following less-variables:
-```css
+```less
 @el-popup-title-color: inherit; 
 @el-popup-title-maxWidth: 100%;
 @el-popup-title-margin: 0;
