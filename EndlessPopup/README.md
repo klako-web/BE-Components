@@ -13,9 +13,9 @@ Create popups and toasts.
 ## General usage
 - Place the component somewhere on a page. There will be no immediate visible reflection in the published preview. Don't worry.
 - Fill the ``Id`` property in the side panel. Otherwise, you will not be able to work with actions
-- To trigger a popup, use the component action ``show``. For instance, you can call this action within an ``On Click Event`` of a button.
+- To trigger a popup, use the component action ``Show``. For instance, you can call this action within an ``On Click Event`` of a button.
 ![On Click Handler](./assets/onClickHandler.png)
-- This action returns an object which basically shows which buttons have been pressed, for instance ``{"isConfirmed":true,"isDenied":false,"isDismissed":false,"value":true}``
+- This action returns an object which indicates which button has been pressed, for instance ``{"isConfirmed":true,"isDenied":false,"isDismissed":false,"value":true}``
 
 <br>
 
