@@ -11,7 +11,7 @@ Create popups and toasts.
 >**Disclaimer**: No support will be provided for the free (non-PRO) version of this component!
 
 ## General usage
-- Place the component somewhere on a page. There will be no visible reflection in the preview. Don't worry.
+- Place the component somewhere on a page. There will be no immediate visible reflection in the published preview. Don't worry.
 - Fill the ``Id`` property in the side panel. Otherwise, you will not be able to work with actions
 - To trigger a popup, use the component action ``show``. For instance, you can call this action within an ``On Click Event`` of a button.
 ![On Click Handler](./assets/onClickHandler.png)
@@ -25,23 +25,17 @@ For each Codeless Block of an action, you have to select the ``Id`` of the custo
 ### Show
 This action is exposed via a Backendless Codeless Block. See **General usage** for an example. The block parameter has to be set to the ``Id`` of a component instance on a specific page.
 
+#### Inputs:
+- *Icon Type*: The type of the icon show with the popup. Possible values:  ``info``, ``warning``, ``error``, ``success``, ``question``. If no value is specified, no icon is shown.
+- *Title*: An optional popup title string. For the **Pro-version**, the string can contain HTML-markup.
+- *Content*: The actual message text for the popup. For the **Pro-version**, the text can contain HTML-markup.
+- *Image URL*: (**Pro-version only**) A fully qualified URL (https://...) to an image file to be displayed in the popup.
+- *Image Width*: (**Pro-version only**) Custom image width. Can have any CSS units (e.g., ``px``, ``em``, ``rem``, ``%``).
+- *Footer*: (**Pro-version only**) The text to be shown as popup footer. Can include HTML-markup.
+
 <br>
 
 ## Properties
-
-### Title
-The text to be shown as popup title. The **Pro-version** supports HTML.
-
-### Content
-The text to be shown as popup content. The **Pro-version** supports HTML.
-
-### Footer
-(**Pro-version only**) The text to be shown as popup footer. Supports HTML.
-
-### Icon Type
-The type of the icon show with the popup
-
-Possible values: ``<nothing>``, ``Information``, ``Warning``, ``Error``, ``Success``, ``Question``.
 
 ### Show Confirm Button
 Boolean to decide whether to show the confirm button. Defaults to ``true``.
@@ -63,7 +57,7 @@ Defaults to ``false``
 Defaults to ``false``
 
 ### Show as Toast
-Defaults to ``false``. A "Toast" is a little message box which shows information for a limited amount of time. Use the ``Duration``-property to control how long the toast is shown. For the **free version**, this interval is fixed at 2000 ms. It is recommended to run the toast as an asynchronous operation:
+Defaults to ``false``. A "Toast" is a little message box which shows information for a limited amount of time. Use the ``Duration``-property to control how long the toast is shown. For the **free version**, this interval is fixed at 2500 ms. It is recommended to run the toast as an asynchronous operation:
 
 ![Asynch Toast](./assets/toast.png)
 
@@ -77,19 +71,13 @@ Defaults to ``false``. A "Toast" is a little message box which shows information
 Popup window width, including paddings (box-sizing: border-box). Can be in any CSS unit (e.g, ``px``, ``em``, ``rem``, ``%``). Defaults to ``32em``.
 
 ### Color
-Color for title, content and footer.
+Text color for title, content and footer.
 
 ### Background
 Popup window background color.
 
-### Image
-(**Pro-version only**) An image to be shown in the popup.
-
-### Image Width
-(**Pro-version only**) Custom image width. Can be in any CSS unit (e.g., ``px``, ``em``, ``rem``, ``%``).
-
 ### Allow Outside Click
-(**Pro-version only**) Defaults to ``true``. If this is set, the popup can be closed by clicking into the background outside of the popup. For the **non-Pro-version**, the value is always ``true``.
+(**Pro-version only**) Defaults to ``true``. If this is set, the popup can be closed by clicking into the background outside of the popup. For the **free version**, the value is always ``true``.
 
 ### Show Class
 (**Pro-version only**) A CSS-animation class which is used for popup or toast appearance. See section [Animations](#Animations).
