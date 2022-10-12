@@ -57,7 +57,7 @@ Defaults to ``false``
 Defaults to ``false``
 
 ### Show as Toast
-Defaults to ``false``. A "Toast" is a little message box which shows information for a limited amount of time. Use the ``Duration``-property to control how long the toast is shown. For the **free version**, this interval is fixed at 2500 ms. It is recommended to run the toast as an asynchronous operation:
+Defaults to ``false``. A "Toast" is a little message box which shows information for a limited amount of time. Use the ``Duration``-property to control how long the toast is shown. For the **free version**, this interval is fixed at 2500 ms for toasts. It is recommended to run the toast as an asynchronous operation:
 
 ![Asynch Toast](./assets/toast.png)
 
