@@ -126,7 +126,7 @@ See section [Error Handler](#error-handler).
 
 ## Protecting files
 
-> **NOTE**: The only secure way to protect files against unwanted access or operations is the Backendless permission system for files. File Manager cannot provide any secure mechanism to protect files against unwanted access.
+> **NOTE**: **The only secure way to protect files against unwanted access or operations is the Backendless permission system for files. File Manager cannot provide any secure mechanism to protect files against unwanted access.**
 
 File Manager is a tools which runs in your Browser client. An experienced programmer can inspect all code in the browser and might change it. Therefore, as any other client side tool, File Manager cannot provide secure mechanisms for protecting files against unwanted access.
 
