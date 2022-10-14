@@ -94,9 +94,26 @@ Standard Backendless error codes are used as listed in the [Backendless Files AP
 
 ### Before Upload
 (**Pro-version only**) 
+Before a file upload operation is started, you can introduce criteria to prevent/allow this operation by implementing this handler. The operation is performed of the handler returns ``true`` and is canceled otherwise. The following example restricts the size of a single file to 100 kB.
+
+![Before Upload Handler](./assets/BeforeUpload.png)
+
+If multiple files are uploaded at once, the handler is called for each file.
 
 ### Before Delete
 (**Pro-version only**) 
+This handler is called once before one or muliple files/folders shall be deleted. A sample implementation using the custom UI component ``Endless Popup`` could look like: 
+
+![Before Upload Handler](./assets/BeforeDelete.png)
+
+The context block ``Resources`` provides a list of objects representing the to be deleted objects. A sample content is shown here:
+```json
+[ 
+  {name: 'Tax', type: 'folder', uri: 'web/users/Klaus/Documents/Tax'},
+  {name: 'Important.docx', type: 'file', uri: 'web/users/Klaus/Documents/Important.docx'}, 
+  {name: 'Letter.pdf', type: 'file', uri: 'web/users/Klaus/Documents/Letter.pdf'}
+]
+```
 
 <br>
 
@@ -114,6 +131,12 @@ File Manager is a tools which runs in your Browser client. Therefore, an experie
 The Backendless platform provides means to grant permissions to restrict file access and file operations. You should consult the documentation on [Backendless Files Security](https://backendless.com/docs/rest/files_files_security.html). 
 
 <br>
+
+## Implementing quotas
+.
+
+<br>
+
 
 ## Reused libraries and components
 This product includes the following external code libraries/components, which are not owned by the authors of ``Endless File Manager`` and ``Endless Filemanger Pro``:
