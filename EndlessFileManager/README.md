@@ -43,7 +43,7 @@ A user cannot go upwards beyond the ``Root Path``. So, ``Root Path`` should poin
 
 ![Navigation](./assets/Navigation.png)
 
-``Root Path`` must be a valid path in the Backendless file system hierarchy. Assume you have created the folder ``/web/users/`` to contain files of your app users. Each user might get her own folder created. So all files of user "Caren" will be within ``/web/users/Caren``. Assume you want offer the File Manager to Caren to upload own files into the subfolder ``Documents``. In this case you might choose ``System Root Path = /web/users/Caren`` and ``Visible Root Path = /Documents``. Make sure that the subfolder ``Documents`` already exists before File Manager gets initialized. Note, that the default value of ``Visible Root Path`` is ``/``.
+``Root Path`` must be a valid path in the Backendless file system hierarchy. Assume you have created the folder ``/web/users`` to contain files of your app users. Each user might get its own folder created. So all files of user "Caren" will be within ``/web/users/Caren``. Assume you want offer the File Manager to Caren to upload own files into the subfolder ``Documents``. In this case you might choose ``System Root Path = /web/users/Caren`` and ``Visible Root Path = /Documents``. Make sure that the subfolder ``Documents`` already exists before File Manager gets initialized. Note, that the default value of ``Visible Root Path`` is ``/``.
 
 <br>
 
@@ -94,7 +94,7 @@ Standard Backendless error codes are used as listed in the [Backendless Files AP
 
 ### Before Upload
 (**Pro-version only**) 
-Before a file upload operation is started, you can introduce criteria to prevent/allow this operation by implementing this handler. The operation is performed of the handler returns ``true`` and is canceled otherwise. The following example restricts the size of a single file to 100 kB.
+Before a file upload operation is started, you can introduce criteria to prevent/allow this operation by implementing this handler. The operation is performed if the handler returns ``true`` and is canceled otherwise. The following example restricts the size of a single file to 100 kB.
 
 ![Before Upload Handler](./assets/BeforeUpload.png)
 
@@ -102,16 +102,18 @@ If multiple files are uploaded at once, the handler is called for each file.
 
 ### Before Delete
 (**Pro-version only**) 
-This handler is called once before one or muliple files/folders shall be deleted. A sample implementation using the custom UI component ``Endless Popup`` could look like: 
+This handler is called once before one or muliple files/folders shall be deleted. Deletion is performed if the handler returns ``true`` and canceled otherwise.
+
+A sample implementation using the custom UI component ``Endless Popup`` could look like this:
 
 ![Before Upload Handler](./assets/BeforeDelete.png)
 
 The context block ``Resources`` provides a list of objects representing the to be deleted objects. A sample content is shown here:
 ```json
 [ 
-  {name: 'Tax', type: 'folder', uri: 'web/users/Klaus/Documents/Tax'},
-  {name: 'Important.docx', type: 'file', uri: 'web/users/Klaus/Documents/Important.docx'}, 
-  {name: 'Letter.pdf', type: 'file', uri: 'web/users/Klaus/Documents/Letter.pdf'}
+  {name: 'Tax', type: 'folder', uri: 'web/users/Carin/Documents/Tax'},
+  {name: 'Important.docx', type: 'file', uri: 'web/users/Carin/Documents/Important.docx'}, 
+  {name: 'Letter.pdf', type: 'file', uri: 'web/users/Carin/Documents/Letter.pdf'}
 ]
 ```
 
@@ -126,17 +128,28 @@ See section [Error Handler](#error-handler).
 
 > **NOTE**: The only secure way to protect files against unwanted access or operations is the Backendless permission system for files. File Manager cannot provide any secure mechanism to protect files against unwanted access.
 
-File Manager is a tools which runs in your Browser client. Therefore, an experienced programmer can inspect all code in the browser and might change it. Therefore, as any other client side tool, File Manager cannot provide secure mechanisms for protecting files against unwanted access.
+File Manager is a tools which runs in your Browser client. An experienced programmer can inspect all code in the browser and might change it. Therefore, as any other client side tool, File Manager cannot provide secure mechanisms for protecting files against unwanted access.
 
 The Backendless platform provides means to grant permissions to restrict file access and file operations. You should consult the documentation on [Backendless Files Security](https://backendless.com/docs/rest/files_files_security.html). 
 
 <br>
 
 ## Implementing quotas
-.
+With such a flexible and easy to use tool like the ``Endless File Manger``, your users can easily upload files to the  Backendless file system. As the costs of storing data is on your side, you will probably want to introduce quotas for your users, to prevent them from occupying too much file system space. For the same reasons as discussed in section [Protecting files](#protecting-files), File Manager, as a client side tool, cannot implement quotas in a reliable way. Such a mechanism must be implemented as a server side logic, which users cannot modify. The Backendless platform provides the means of ``Event Handlers`` to solve this requirement. Specifically, you can implement a ``Before Upload`` handler from the "Files" category:
+
+![Quota check implementation](./assets/FileEventHandler.png)
+
+In CODELESS logic, handler implementation could look like this:
+
+![Quota check implementation](./assets/QuotaFinal.png)
+
+If you want to implement a user dependent quota, you have to modify the code at the two indicated locations.
+
+At time of writing this documentation, within the event handler, there is no access to the size of the file to be uploaded. Therefore, the total size computation yields the total size of already uploaded files only. You can follow [this support topic](https://support.backendless.com/t/before-upload-file-attributes/15479) to get notified, once this information is available in the event handler.
+
+A client side solution how to limit the upload size of an individual file has been depicted in section [Before Upload](#before-upload).
 
 <br>
-
 
 ## Reused libraries and components
 This product includes the following external code libraries/components, which are not owned by the authors of ``Endless File Manager`` and ``Endless Filemanger Pro``:
