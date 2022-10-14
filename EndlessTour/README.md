@@ -2,8 +2,12 @@
 
 This is the documentation for the UI components ``Info Tour`` and ``Info Tour Pro`` for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
+<center>
+
 ![Icon](./assets/iconTour.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
 ![IconPro](./assets/iconTourPro.jpg)
+
+</center>
 
 >**Disclaimer**: No support will be provided for the free (non-PRO) version of this component!
 

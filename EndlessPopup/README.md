@@ -2,8 +2,12 @@
 
 This is the documentation for the UI components ``Popup`` and ``Popup Pro`` for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
+<center>
+
 ![Icon](./assets/IconPopup.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
 ![IconPro](./assets/IconPopupPro.jpg)
+
+</center>
 
 ## Use Cases
 Create popups and toasts.

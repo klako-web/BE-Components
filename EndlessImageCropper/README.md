@@ -2,8 +2,12 @@
 
 This is the documentation for the UI components ``Image Cropper`` and ``Image Cropper Pro`` for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
+<center>
+
 ![Icon](./assets/Icon.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
 ![IconPro](./assets/IconPro.jpg)
+
+</center>
 
 ## Use Cases
 - Select an image from local file system, or mobile device camera
