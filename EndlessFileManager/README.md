@@ -73,7 +73,7 @@ All errors which occur during File Manager operations are communicated via this 
 ![Errors](./assets/Errors.png)
 
 During a File Manager  operation, multiple errors might occur. For instance, when trying to delete a set of files at once. Therefore, ``Error`` is of type "list of objects" to capture mutiple errors of one operation. One error object has a structure as in the following example:
-```json
+```
 {
     code: 4000,
     message: "User has no permissions for specified resource",
@@ -109,7 +109,7 @@ A sample implementation using the custom UI component ``Endless Popup`` could lo
 ![Before Upload Handler](./assets/BeforeDelete.png)
 
 The context block ``Resources`` provides a list of objects representing the to be deleted objects. A sample content is shown here:
-```json
+```
 [ 
   {name: 'Tax', type: 'folder', uri: 'web/users/Carin/Documents/Tax'},
   {name: 'Important.docx', type: 'file', uri: 'web/users/Carin/Documents/Important.docx'}, 
