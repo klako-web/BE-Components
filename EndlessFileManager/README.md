@@ -2,8 +2,12 @@
 
 This is the documentation for the UI components ``File Manager`` and ``File Manager Pro`` for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
+<center>
+
 ![Icon](./assets/IconFilemanager.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
 ![IconPro](./assets/IconFilemanagerPro.jpg)
+
+</center>
 
 ## Use Cases
 Upload, view and organize files on the Backendless file system.
