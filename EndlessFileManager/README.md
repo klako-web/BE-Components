@@ -117,6 +117,24 @@ The context block ``Resources`` provides a list of objects representing the to b
 ]
 ```
 
+### Before Open File
+(**Pro-version only**) 
+This handler is called before an action is performed in response to a double-click on a file icon. The context block ``File`` contains attributes of the file to be opened. Sample content:
+```
+{
+  name: "profileImage.jpg",
+  path: "web/users/Caren/profileImage.jpg",
+  size: 4096,
+  url: "https://backendlessappcontent.com/6E10590/89CD/files/web/users/Caren/profileImage.jpg",
+  createdOn: 1665673676313,
+  updatedOn: 1665673676499
+}
+```
+The handler has a return parameter.
+- If nothing is returned (or if the handler is not implement at all), the system launches the command ``window.open(url)``. The resulting action depends on the browser settings. For instance, browsers contain image viewers which can display images a new browser tab or window. Files with file types unknown to the browser will be downloaded to the browser's download folder.
+- If ``false`` is returned, the system will perform no action to open the file. This is useful if you want to implement your own "open file" action.
+- All other return values are interpreted as a changed URL used to launch  the ``window.open()`` command. This is useful, for instance, if you want to replace the domain name in ``Files.url`` to match the domain where your app is hosted.
+
 <br>
 
 ## Error handling
@@ -135,7 +153,7 @@ The Backendless platform provides means to grant permissions to restrict file ac
 <br>
 
 ## Implementing quotas
-With such a flexible and easy to use tool like the ``Endless File Manger``, your users can easily upload files to the  Backendless file system. As the costs of storing data is on your side, you will probably want to introduce quotas for your users, to prevent them from occupying too much file system space. For the same reasons as discussed in section [Protecting files](#protecting-files), File Manager, as a client side tool, cannot implement quotas in a reliable way. Such a mechanism must be implemented as a server side logic, which users cannot modify. The Backendless platform provides the means of ``Event Handlers`` to solve this requirement. Specifically, you can implement a ``Before Upload`` handler from the "Files" category:
+With such a flexible and easy to use tool like ``Endless File Manger``, your users can easily upload files to the  Backendless file system. As the costs of storing data is on your side, you will probably want to introduce quotas for your users, to prevent them from occupying too much file system space. For the same reasons as discussed in section [Protecting files](#protecting-files), File Manager, as a client side tool, cannot implement quotas in a reliable way. Such a mechanism must be implemented as a server side logic, which users cannot modify. The Backendless platform provides the means of ``Event Handlers`` to solve this requirement. Specifically, you can implement a ``Before Upload`` handler from the "Files" category:
 
 ![Quota check implementation](./assets/FileEventHandler.png)
 
