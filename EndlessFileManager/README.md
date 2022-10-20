@@ -10,7 +10,7 @@ This is the documentation for the UI components ***Endless File Manager*** and *
 </center>
 
 ## Use Cases
-Upload, view and organize files on the Backendless file system.
+Upload, download, view and organize files on the Backendless file system.
 
 
 ![Impression](./assets/Impression.png)
@@ -36,19 +36,20 @@ Upload, view and organize files on the Backendless file system.
 - rename files and folders (pro version only)
 - move/copy/paste files and folders (also via drag-and-drop) (pro-version only)
 - delete files and folders (pro-version only)
+- share links to files (pro version only)
 
 <br>
 
 ## File system paths
-*File Manager* provides a "window" to the Backendless file system content at a certain path in the file system. When *File Manager* is initialized, it shows the file system content at the ``Root Path`` which is composed of two components:
+*File Manager* provides a "window" to the Backendless file system at a certain file sytem path. When *File Manager* is initialized, it shows the file system content at ``<Root Path>``, which is composed of two components:
 ```
-Root Path = System Root Path + Visible Root Path
+<Root Path> = <System Root Path> + <Visible Root Path>
 ```
-A user cannot go upwards beyond the ``Root Path``. So, ``Root Path`` should point to a folder which has been created for a user to hold her files and subsequent folders. ``System Root Path`` is not visible to users, whereas ``Visible Root Path`` is displayed as the root of the navigation hierarchy in File Manger.
+A user cannot go upwards beyond ``<Root Path>``. So, it should point to a folder which has been created for a user to hold her files and subsequent folders. ``<System Root Path>`` is not visible to users, whereas ``<Visible Root Path>`` is displayed as the root of the navigation hierarchy in *File Manger*. For example, if ``<Visible Root Path> = '/Documents'`` then the initial navigation bar looks like:
 
 ![Navigation](./assets/Navigation.png)
 
-``Root Path`` must be a valid path in the Backendless file system hierarchy. Assume you have created the folder ``/web/users`` to contain files of your app users. Each user might get its own folder created. So all files of user "Caren" will be within ``/web/users/Caren``. Assume you want offer the *File Manager* to Caren to upload own files into the subfolder ``Documents``. In this case you might choose ``System Root Path = /web/users/Caren`` and ``Visible Root Path = /Documents``. Make sure that the subfolder ``Documents`` already exists before *File Manager* gets initialized. Note, that the default value of ``Visible Root Path`` is ``/``.
+Assume you have created the folder ``/web/users`` to contain files of your app users. Each user might get its own folder created upfront. So all files of user "Caren" will be within ``/web/users/Caren``. Assume you want offer *File Manager* to Caren to upload own files into the subfolder ``Documents``. In this case you might choose ``<System Root Path> = '/web/users/Caren'`` and ``<Visible Root Path> = '/Documents'``. Make sure that the subfolder ``Documents`` already exists before *File Manager* gets initialized. Note, that the default value of ``<Visible Root Path>`` is ``'/'``. To choose ``<System Root Path>`` dynamically depending on the logged-in user, user data binding for the UI component property ``System Root Path``.
 
 <br>
 
@@ -140,6 +141,24 @@ The handler has a return parameter.
 - If ``false`` is returned, the system will perform no action to open the file. This is useful if you want to implement your own "open file" action.
 - All other return values are interpreted as a changed URL used to launch  the ``window.open()`` command. This is useful, for instance, if you want to replace the domain name in ``Files.url`` to match the domain where your app is hosted.
 
+### Before Share
+(**Pro-version only**) 
+This handler is called before the share operation for a selected file is executed. The context block ``File`` contains attributes of the file to be opened. Sample content:
+```
+{
+  name: "profileImage.jpg",
+  path: "web/users/Caren/profileImage.jpg",
+  size: 4096,
+  url: "https://backendlessappcontent.com/6E10590/89CD/files/web/users/Caren/profileImage.jpg",
+  createdOn: 1665673676313,
+  updatedOn: 1665673676499
+}
+```
+The handler has a return parameter.
+- If nothing is returned (or if the handler is not implement at all), the system launches the command for sharing data. Depending on the device, a dialog is shown which lets you choose how to share the link of the selected file. If your device does not support a standard share dialog, then the link is copied to the clipboard.
+- If ``false`` is returned, the system will perform no action to share the link. This is useful if you want to implement your own "share link" action.
+- All other return values are interpreted as a changed URL to be passed to the share command. This is useful, for instance, if you want to replace the domain name in ``Files.url`` to match the domain where your app is hosted.
+
 <br>
 
 ## Error handling
@@ -149,16 +168,16 @@ See section [Error Handler](#error-handler).
 
 ## Protecting files
 
-> **NOTE**: **The only secure way to protect files against unwanted access or operations is the Backendless permission system for files. *File Manager* cannot provide any secure mechanism to protect files against unwanted access.**
+> **NOTE**: **The only secure way to protect files against unwanted access or operations is the Backendless permission system for files. *File Manager* and *File Manager Pro* cannot provide any secure mechanism to protect files against unwanted access.**
 
-*File Manager* is a tools which runs in your Browser client. An experienced programmer can inspect all code in the browser and might change it. Therefore, as any other client side tool, *File Manager* cannot provide secure mechanisms for protecting files against unwanted access.
+*File Manager* and *File Manafr Pro* are tools which run in your Browser client. An experienced programmer can inspect all code in the browser and might change it. Therefore, as any other client side tool, *File Manager* and *File Manager Pro* cannot provide secure mechanisms for protecting files against unwanted access.
 
 The Backendless platform provides means to grant permissions to restrict file access and file operations. You should consult the documentation on [Backendless Files Security](https://backendless.com/docs/rest/files_files_security.html). 
 
 <br>
 
 ## Implementing quotas
-With such a flexible and easy to use tool like *Endless File Manger*, your users can easily upload files to the  Backendless file system. As the costs of storing data is on your side, you will probably want to introduce quotas for your users, to prevent them from occupying too much file system space. For the same reasons as discussed in section [Protecting files](#protecting-files), *File Manager*, as a client side tool, cannot implement quotas in a reliable way. Such a mechanism must be implemented as a server side logic, which users cannot modify. The Backendless platform provides the means of ``Event Handlers`` to solve this requirement. Specifically, you can implement a ``Before Upload`` handler from the "Files" category:
+With such a flexible and easy to use tool like this file manager, your users can easily upload files to the  Backendless file system. As the costs of storing data is on your side, you will probably want to introduce quotas for your users, to prevent them from occupying too much file system space. For the same reasons as discussed in section [Protecting files](#protecting-files), *File Manager* and *File Manager Pro*, as client side tools, cannot implement quotas in a reliable way. Such a mechanism must be implemented as a server side logic, which users cannot modify. The Backendless platform provides the means of backend ``Event Handlers`` to solve this requirement. Specifically, you can implement a ``Before Upload`` handler from the "Files" category on the Backendless backend:
 
 ![Quota check implementation](./assets/FileEventHandler.png)
 
@@ -175,6 +194,6 @@ A client side solution how to limit the upload size of an individual file has be
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the authors of ***Endless File Manager*** and **Endless Filemanger Pro**:
+This product includes the following external code libraries/components, which are not owned by the authors of ***Endless File Manager*** and ***Endless Filemanger Pro***:
 
 - [js-fileexplorer](https://github.com/cubiclesoft/js-fileexplorer). Licensed under the MIT License.
