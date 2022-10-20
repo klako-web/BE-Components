@@ -3,7 +3,7 @@ Documentation for *Endless* custom UI components for Backendless UI Builder (htt
 
 The following components are available:
 
-|                                 |
-| :----------------------------------------: |
-| ![Icon](./EndlessPopup/assets/IconPopup.jpg) |
-| ![Icon](./EndlessTour/./assets/iconTour.jpg) |
+| | |
+| --- | --- |
+| [ ![Icon](./EndlessPopup/assets/IconPopup.jpg) ](./EndlessPopup/README.md) |  Create popups and toasts |
+| ![Icon](./EndlessTour/./assets/iconTour.jpg) |  Create tours  |
