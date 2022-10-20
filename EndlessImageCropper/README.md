@@ -1,6 +1,6 @@
 # Endless Image Cropper
 
-This is the documentation for the UI components ``Image Cropper`` and ``Image Cropper Pro`` for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
+This is the documentation for the UI components ***Endless Image Cropper*** and ***Endless Image Cropper Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 <center>
 
@@ -30,7 +30,7 @@ All processing is done in the browser client. So, no transfer of original, large
 
 ## General usage
 1. Place a Block-UI-component on a page where you want to display the preview of an image to be uploaded. Adjust the dimensions and other properties of this Block-component to your needs.
-2. Place the custom UI component ``Image Cropper`` or ``Image Cropper Pro`` into the Block-component. 
+2. Place the custom UI component **Image Cropper** or **Image Cropper Pro** into the Block-component. 
 3. Fill the ``Id`` property of the custom component in the side panel. Otherwise, you will not be able to work with actions.
 4. Place buttons on your page. In the respective "On Click Event"-handlers call one of the custom component actions. An example how this can look like is shown here:
 
@@ -232,6 +232,6 @@ The ``Paste from Clipboard`` action is special because it runs asynchronously. T
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ``Endless Image Cropper`` and ``Endless Image Cropper Pro``:
+This product includes the following external code libraries/components, which are not owned by the author of ***Endless Image Cropper*** and ***Endless Image Cropper Pro***:
 
 - [Cropper.js](https://fengyuanchen.github.io/cropperjs/): Licensed under the [MIT License](https://github.com/fengyuanchen/cropperjs/blob/main/LICENSE)

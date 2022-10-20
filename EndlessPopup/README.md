@@ -1,6 +1,6 @@
 # Endless Popups
 
-This is the documentation for the UI components ``Popup`` and ``Popup Pro`` for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
+This is the documentation for the UI components ***Endless Popup*** and ***Endless Popup Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 <center>
 
@@ -10,7 +10,11 @@ This is the documentation for the UI components ``Popup`` and ``Popup Pro`` for 
 </center>
 
 ## Use Cases
-Create popups and toasts.
+Create popups and toasts. Toasts are lightweight notifications windows which are displayed for a certain amount of time.
+
+![Icon](./assets/Sample1.png) &nbsp; &nbsp;&nbsp;&nbsp;
+![IconPro](./assets/Sample2.png)
+
 
 >**Disclaimer**: No support will be provided for the free (non-PRO) version of this component!
 
@@ -168,6 +172,6 @@ By using the properties ``Show Class`` and ``Hide Class``, CSS-classes can be co
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ``Endless Popup`` and ``Endless Popup Pro``:
+This product includes the following external code libraries/components, which are not owned by the author of ***Endless Popup*** and ***Endless Popup Pro***:
 
 - [Sweetalert2](https://sweetalert2.github.io/). Licensed under the [MIT License](https://github.com/sweetalert2/sweetalert2/blob/main/LICENSE).
