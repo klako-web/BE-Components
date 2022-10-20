@@ -14,7 +14,7 @@ This is the documentation for the UI components ***Endless Info Tour*** and ***E
 <br>
 
 ## Use Cases
-Onboard your users to your app. Provide guidance for UI elements on your page in a step-by-step, interactive tour showing tooltips for each relevant screen area. Start the below video to see a demo:
+User onboarding for your app. Provide guidance for UI elements on your page in a step-by-step, interactive tour showing tooltips for each relevant screen area. Start the below video to see a demo:
 
 
 https://user-images.githubusercontent.com/69795385/188916715-0b5e0aa4-6fe7-405e-a578-618a7fd7f86a.mp4
