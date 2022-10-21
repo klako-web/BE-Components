@@ -10,7 +10,7 @@ This is the documentation for the UI components ***Endless Popup*** and ***Endle
 </center>
 
 ## Use Cases
-Create popups and toasts. Toasts are lightweight notifications windows which are displayed for a certain amount of time.
+Create popups, toasts and alerts. Toasts are lightweight notifications windows which are displayed for a certain amount of time.
 
 ![Icon](./assets/Sample1.png) &nbsp; &nbsp;&nbsp;&nbsp;
 ![IconPro](./assets/Sample2.png)
