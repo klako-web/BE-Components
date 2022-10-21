@@ -1,11 +1,11 @@
-# Endless Backendless Components
+# Endless Components
 
 
 ### Documentation for *Endless UI Components* for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 <br>
 
-<img src="./assets/endlessLogo.png" width="90%"/>
+<img src="./assets/endlessLogo.png" width="80%"/>
 
 <br>
 
