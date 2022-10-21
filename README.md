@@ -1,7 +1,7 @@
 # Endless Components
 
 
-### Documentation for *Endless UI Components* for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
+## UI Components for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 <br>
 
