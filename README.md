@@ -1,7 +1,7 @@
 # Endless Components
 
 
-### UI Components for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
+### UI Components sgsg for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 <br>
 
