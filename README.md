@@ -5,7 +5,9 @@
 
 <br>
 
-<center><img src="./assets/endlessLogo.png" width="80%"/></center>
+<p align="center">
+  <img src="./assets/endlessLogo.png" width="70%"/>
+</p>
 
 <br>
 
