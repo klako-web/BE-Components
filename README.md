@@ -9,6 +9,8 @@
   <img src="./assets/endlessLogo.png" width="70%"/>
 </p>
 
+Components are usually offered as two variants. A free version and a Pro-version with an associated fee. No support is offered for the free versions, but you are welcome to create [discussions](https://github.com/klako-web/Endless-Components/discussions) and [issues](https://github.com/klako-web/Endless-Components/discussions).
+
 <br>
 
 | | |
