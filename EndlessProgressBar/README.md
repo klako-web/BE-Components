@@ -9,12 +9,9 @@ This is the documentation for the UI component ***Endless Progress Bar*** and **
 
 </center>
 
-><br>
 > <b>Disclaimer</b>: No support is provided for the free (non-PRO) version of this component!
 
-><br>
-
-
+<br>
 
 ## Use Cases
 Use an animated progress bar to show the progress of a process. The displayed progress is fully under control by you through simple data binding.
