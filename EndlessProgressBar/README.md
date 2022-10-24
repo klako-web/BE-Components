@@ -91,6 +91,6 @@ None.
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ***Endless Progress Bar*** and ***Endless Progress Bar Pro***:
+This product includes the following external code libraries/components, which are not owned by the authors of ***Endless Progress Bar*** and ***Endless Progress Bar Pro***:
 
 - [react-progress-bar](https://github.com/KaterinaLupacheva/react-progress-bar). Licensed under the [MIT License](https://github.com/KaterinaLupacheva/react-progress-bar/blob/master/LICENSE).
