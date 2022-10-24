@@ -24,12 +24,7 @@ https://user-images.githubusercontent.com/69795385/197525838-64f0a2b7-5da4-4290-
 >**Disclaimer**: No support will be provided for the free (non-PRO) version of this component!
 
 ## General usage
-- Place the component on a page where it should appear. It always renderes with 100% width. It is recommended to wrap it by a Block-component to adjust width, heigth, etc.
-
-<br>
-
-## Actions
-None.
+Place the component on a page where it should appear. It always renderes with 100% width. It is recommended to wrap it by a Block-component to adjust width, heigth, etc.
 
 <br>
 
@@ -65,16 +60,24 @@ The font size of the progress value or of the label.
 ### Label Color
 The font color of the progress value or of the label.
 
-## Label Alignment
+### Label Alignment
 The label or progress value can be shown within the progress bar at positions ``Left``, ``Right``, ``Center``, or it can be shown ``Outside`` of the entire bar. 
 
-## Duration
+### Duration
 Numerical value for setting the bar transition duration in seconds.
 
-## Timing Function
+### Timing Function
 Affects how the progress bar transitions towards the target progress value.
 
 <br>
+
+## Actions
+None.
+
+<br>
+
+## Events
+None.
 
 ## Reused libraries and components
 This product includes the following external code libraries/components, which are not owned by the author of ***Endless Progress Bar***:
