@@ -16,11 +16,7 @@ This is the documentation for the UI component ***Endless Progress Bar*** and **
 ## Use Cases
 Use an animated progress bar to show the progress of a process. The displayed progress is fully under control by you through simple data binding.
 
-
-
 https://user-images.githubusercontent.com/69795385/197525821-06ecafb1-4342-4028-9381-196d24fb56c2.mp4
-
-
 
 https://user-images.githubusercontent.com/69795385/197525838-64f0a2b7-5da4-4290-b55a-775a5925ea94.mp4
 
