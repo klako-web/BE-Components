@@ -13,6 +13,14 @@ Use an animated progress bar to show the progress of a process. The displayed pr
 
 
 
+https://user-images.githubusercontent.com/69795385/197525821-06ecafb1-4342-4028-9381-196d24fb56c2.mp4
+
+
+
+https://user-images.githubusercontent.com/69795385/197525838-64f0a2b7-5da4-4290-b55a-775a5925ea94.mp4
+
+
+
 >**Disclaimer**: No support will be provided for the free (non-PRO) version of this component!
 
 ## General usage
