@@ -68,6 +68,12 @@ The font color of the progress value or of the label.
 ## Label Alignment
 The label or progress value can be shown within the progress bar at positions ``Left``, ``Right``, ``Center``, or it can be shown ``Outside`` of the entire bar. 
 
+## Duration
+Numerical value for setting the bar transition duration in seconds.
+
+## Timing Function
+Affects how the progress bar transitions towards the target progress value.
+
 <br>
 
 ## Reused libraries and components
