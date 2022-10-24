@@ -9,6 +9,13 @@ This is the documentation for the UI component ***Endless Progress Bar*** and **
 
 </center>
 
+><br>
+> <b>Disclaimer</b>: No support is provided for the free (non-PRO) version of this component!
+
+><br>
+
+
+
 ## Use Cases
 Use an animated progress bar to show the progress of a process. The displayed progress is fully under control by you through simple data binding.
 
@@ -19,10 +26,6 @@ https://user-images.githubusercontent.com/69795385/197525821-06ecafb1-4342-4028-
 
 
 https://user-images.githubusercontent.com/69795385/197525838-64f0a2b7-5da4-4290-b55a-775a5925ea94.mp4
-
-
-
->**Disclaimer**: No support will be provided for the free (non-PRO) version of this component!
 
 ## General usage
 Place the component on a page where it should appear. It always renders with 100% width. It is recommended to wrap it by a Block-component to adjust width, heigth, margin, padding, etc.
