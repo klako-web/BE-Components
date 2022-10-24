@@ -1,6 +1,6 @@
 # Endless Progress Bar
 
-This is the documentation for the UI component ***Endless Progress Bar*** and ***Endless Progress Bar*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
+This is the documentation for the UI component ***Endless Progress Bar*** and ***Endless Progress Bar Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 <center>
 
@@ -25,7 +25,7 @@ https://user-images.githubusercontent.com/69795385/197525838-64f0a2b7-5da4-4290-
 >**Disclaimer**: No support will be provided for the free (non-PRO) version of this component!
 
 ## General usage
-Place the component on a page where it should appear. It always renderes with 100% width. It is recommended to wrap it by a Block-component to adjust width, heigth, margin, padding, etc.
+Place the component on a page where it should appear. It always renders with 100% width. It is recommended to wrap it by a Block-component to adjust width, heigth, margin, padding, etc.
 
 <br>
 
@@ -36,7 +36,7 @@ A numerical value which indicates the degree of completion (extent of the progre
 
 ### Percentage
 (**Pro-version only**)
-If the checkbox is selected (default), the ``Progress``- property is interpreted as a percentage and the %-sign is shown. For the free version, the ``Progress`` is always interpreted as a percentage.
+If the checkbox is selected (default), the ``Progress``- property is interpreted as a percentage and the %-sign is shown. For the free version, ``Progress`` is always interpreted as a percentage.
 
 ### Max Progress
 (**Pro-version only**)
