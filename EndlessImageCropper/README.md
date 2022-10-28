@@ -53,7 +53,7 @@ Unchecking the ``Display`` property makes sense only when checking ``No Crop Box
 (**Pro-version only**) Boolean. If checked, no resizable crop area is shown above the image. Still, parts of the image can be cropped, by zooming-in and moving the image along the canvas. The save and crop action will then crop the visible part of the image.
 
 ### Min Canvas Width
-(**Pro-version only**) By default, the canvas size is set to the size of loaded image, of course within the constraints set by the surrounding Block-UI-component. If you deal with very small image, it can make sense to set a minimal canvas size in pixel. It is recommended to then either set ``Min Canvas Width`` or ``Min Canvas Height``. The property which is not set will be computed to conserve the image width-to-height ratio.
+(**Pro-version only**) By default, the canvas size is set to the size of the loaded image, of course within the constraints set by the surrounding Block-UI-component. If you deal with very small images, it can make sense to set a minimal canvas size in pixel. It is recommended to either set ``Min Canvas Width`` or ``Min Canvas Height``. The property which is not set will be computed to conserve the image width-to-height ratio.
 
 ### Min Canvas Height
 (**Pro-version only**) See ``Min Canvas Width``.
