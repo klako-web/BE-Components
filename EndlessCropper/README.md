@@ -166,39 +166,32 @@ When cropping a circular area, the background of the resulting image is set to w
 
 <br>
 
-## Events (TODO)
+## Events
 
 ### On Image Loaded
 (**Pro-version only**)
 
-Each time a new image is selected or pasted, this event handler is invoked. It provides information about the image and the file which has been selected.
-
-![On Image Loaded](./assets/onImageLoaded.png)
+Each time a new image is selected or pasted, this event handler is invoked. Via the context block ``File`` it provides information about the image and the file which has been selected. ``File`` is an object with the following properties:
+- ``name`` of the image file
+- ``size`` of the image file in bytes
+- ``mimeType`` of the image, e.g., ``image/jpeg``
+- ``width`` and ``height`` of the image in pixel
 
 <br>
 
 ### On Paste Error
 (**Pro-version only**)
 
-The ``Paste from Clipboard`` action is an asynchronous operation. Therefore, error handling is provided by an event handler. If an error during pasting occurrs, or if there is no image in the clipboard, this event handler is invoked. The passed ``error`` object has properties ``code`` and ``message``. See section "Error handling" below.
+The ``Paste from Clipboard`` action is an asynchronous operation. Therefore, error handling is provided by an event handler. If an error during pasting occurrs, or if there is no image in the clipboard, this event handler is invoked. The passed ``error`` object has properties ``code`` and ``message``. See section [Error handling](#error-handling) below.
 
 ![On Paste Error](./assets/onPasteError.png)
 
 <br>
 
-## Error handling (TODO)
+## Error handling
 Whenever you use codeless blocks to call component actions, you should wrap them by a ``try/catch`` block. Actions throw an error object which contains a ``code`` and a ``message`` property.
 
 ![Error handling sample](./assets/errorSample1.png)
-
-<br>
-
-### Error handling for "Paste from Clipboard" action
-(**Pro-version only**)
-
-The ``Paste from Clipboard`` action is special because it runs asynchronously. Therefore, errors are communicated via the event ``On Paste Error`` (see above event description).
-
-<br>
 
 ### Table of error codes and messages
 
@@ -210,14 +203,17 @@ The ``Paste from Clipboard`` action is special because it runs asynchronously. T
 | 104   | Clipboard contains no image data (2) |
 | 105   | Dimension parameter must be either "width" or "height" |
 | 106   | Compression ratio must be >0 and <=1 |
-| 107   | A path parameter must be specified  |
-| 108   | Filename must include a file extension  |
-| 109   | Extracted image type must match desired filename extension |
-| 110   | Clipboard contains no image data (3) |
+
+<br>
+
+### Error handling for "Paste from Clipboard" action
+(**Pro-version only**)
+
+The ``Paste from Clipboard`` action is special because it runs asynchronously. Therefore, errors are communicated via the event ``On Paste Error`` (see above event description).
 
 <br>
 
 ## Reused libraries and components
 This product includes the following external code libraries/components, which are not owned by the author of ***Endless Cropper*** and ***Endless Cropper Pro***:
 
-- [react-advanced-cropper](https://github.com/advanced-cropper/react-advanced-cropper): Licensed under the [MIT License](https://github.com/advanced-cropper/react-advanced-cropper/blob/master/LICENSE)
+- [react-advanced-cropper](https://github.com/advanced-cropper/react-advanced-cropper) licensed under the [MIT License](https://github.com/advanced-cropper/react-advanced-cropper/blob/master/LICENSE)
