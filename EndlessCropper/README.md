@@ -3,7 +3,7 @@
 This is the documentation for the UI components ***Endless Cropper*** and ***Endless Cropper Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 <center>
-**TODO**
+
 ![Icon](./assets/Icon.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
 ![IconPro](./assets/IconPro.jpg)
 
