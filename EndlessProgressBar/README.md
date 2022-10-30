@@ -44,7 +44,7 @@ The height of the progress bar. Can be in any applicable CSS-units (e.g., ``px``
 
 ### Border Radius
 (**Pro-version only**)
-The curvature of the progress bar. Can be in any applicable CSS-units (e.g., ``px``, ``em``, ``%``).
+The curvature of the progress bar corners. Can be in any applicable CSS-units (e.g., ``px``, ``em``, ``%``).
 
 ### Color
 Progress bar color.
