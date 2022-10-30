@@ -74,7 +74,7 @@ Extracts the image from the current cropping area. At the same time, the image c
 
 *Input parameters:*
 
-- ``Compression Ratio``: Optional. A number between 0 and 1. The default is ``0.8``. Is applied if the resulting image type supports lossy compression (e.g., jpg or webp).
+- ``Compression Ratio``: (**Pro-version only**) Optional. A number between 0 and 1. The default is ``0.8``. Is applied if the resulting image type supports lossy compression (e.g., jpg or webp). For the free version, this ratio is fixed at ``0.8``.
 - ``Scaling Dimension``: (**Pro-version only**) Optional. Valid values are "width" and "height". Before uploading the image to the Backendless file system, it can be scaled along either its width or height dimension. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixels`` is specified, the extracted or saved image will not be scaled.
 - ``Scaling Pixels``: (**Pro-version only**) Optional. The amount of pixels to be set for the selected scaling dimension. The number of pixels for the other dimension is computed in a way that does not change the image aspect ratio. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixels`` is specified, the extracted or saved image will not be scaled.
 - ``Image Type``: (**Pro-version only**) Optional. The image encoding type ("jpg", "png", etc.) for cropped images. If omitted, the type is taken from the original filename.
@@ -106,12 +106,11 @@ The cropped image is
 - converted into a ``webp``-image
 - scaled to 256 pixel along the horizontal direction, whereas the height is chosen to keep the aspect ratio
 
-Then some sting manipulation is done to construct the new filename, which needs to have the ``webp``-extension. Finally, the file is saved to the Backendless file system by using ``arrayBuffer`` image data.
+Then, some string manipulation is done to construct the new filename, which needs to have the ``webp``-extension. Finally, the file is saved to the Backendless file system by using ``arrayBuffer`` image data.
 
 <br>
 
 ### Rotate
-(**Pro-version only**)
 
 The image is rotated on the canvas.
 
