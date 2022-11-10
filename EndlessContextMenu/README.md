@@ -79,6 +79,20 @@ This event is raised, if a user clicks on a menu item. The handler receives the 
 
 ![Define Menu](./assets/onItemSelected.png)
 
+### On Error
+Errors which occurr upon context menu creation, are communicated asynchroneously via this event handler. You can use this handler to log errors to the browser's developer console, or to log them with the Backendless logging API.
+
+![Error handling](./assets/errorHandling.png)
+
+The following pre-defined errors can be raised:
+
+| Code  |  Message                            |
+| ----- | ----------------------------------- |
+| 101   | Menu definition variable must be a list (array) of objects |
+| 102   | Menu item action and label must be specified |
+| 103   | Submenu definition must be a list (array) of objects |
+| 104   | Menu item definition must be either an object or the string 'hr' |
+
 <br>
 
 ## Reused libraries and components
