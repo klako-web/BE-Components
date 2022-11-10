@@ -1,11 +1,10 @@
 # Endless Context Menu
 
-This is the documentation for the UI component ***Endless Context Menu*** and ***Endless Context Menu Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
+This is the documentation for the UI component ***Endless Context Menu Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 <center>
 
-![Icon](./assets/IconProgressBar.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
-![Icon](./assets/IconProgressBarPro.jpg)
+![Icon](./assets/C-Menu.jpg)
 
 </center>
 
@@ -87,6 +86,6 @@ This event is raised, if a user clicks on a menu item. The handler receives the 
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the authors of ***Endless Context Menu*** and ***Endless Context Menu Pro***:
+This product includes the following external code libraries/components, which are not owned by the authors of ***Endless Context Menu Pro***:
 
 - [vanilla-context-menu](https://github.com/GeorgianStan/vanilla-context-menu). Licensed under the [MIT License](https://github.com/GeorgianStan/vanilla-context-menu/blob/master/LICENSE).
