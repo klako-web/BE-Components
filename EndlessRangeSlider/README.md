@@ -31,16 +31,34 @@ Place the component on a page. It is recommended to wrap it by a block component
 ## Properties
 
 ### Range Selector
+If this checkbox is checked, the selector is acting as a range selector. Two handles are shown which can be used to adjust the range.
 
 ### Show Tooltip(s)
+Tooltip(s) for the current selection are displayed above the slider.
 
 ### Show Tick Marks
+Tick marks are shown below the slider.
 
 ### Tick Values
+Tick values can be defined in two ways:
+1. Via a JSON array. Examples:
+   ```
+   ["low", "medium-low", "medium", "medium-high", "high"]
+   ```
+   ```
+   [-40, -30, -20, -10, 0, 10, 20, 30, 40]
+   ```
+
+2. Via a range/step JSON object with numerical values. Example:
+   ```
+   {"min": 50, "max": 150, "step": 10}
+   ```
 
 ### Show Labels
+The labels set with ``Tick Values`` are shown below the slider.
 
 ### Initial Selection
+The initial value of the first and, if ``Range Selector=true``, the second selection handle. The values have to be defined as a JSON array (e.g. ``[60, 90]`` ).
 
 <br>
 
