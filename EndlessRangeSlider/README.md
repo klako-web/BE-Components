@@ -27,13 +27,13 @@ Place the component on a page. It is recommended to wrap it by a block component
 ## Properties
 
 ### Range Selector
-If this checkbox is checked, the selector is acting as a range selector. Two handles are shown which can be used to adjust the range.
+If this checkbox is checked, the slider is acting as a range selector. Two handles are shown which can be used to select a range.
 
-### Show Tooltip(s)
-Tooltip(s) for the current selection are displayed above the slider.
+### Show Selected Values
+Currently selected values/labels are displayed above the slider handles.
 
 ### Show Tick Marks
-Tick marks are shown below the slider.
+If this checkbox is checked, tick marks are shown below the slider.
 
 ### Tick Labels
 Tick labels can be defined in two ways:
@@ -51,17 +51,17 @@ Tick labels can be defined in two ways:
    ```
 
 ### Show Labels
-The labels set with ``Tick Labels`` are shown below the slider.
+The labels set with ``Tick Labels`` are displayed below the slider.
 
 ### Initial Selection
-The initial value of the first and, if ``Range Selector=true``, the second selection handle. The values have to be defined as a JSON array (e.g. ``[60, 90]`` ).
+The initial value of the first and, if ``Range Selector=true``, the second selection handle. The values have to be passed as a JSON array (e.g. ``["medium"]``, or ``[60, 90]`` ).
 
 <br>
 
 ## Actions
 
 ### Set Enabled Status
-Pass ``true`` or ``false`` to enable or disable the slider. Example:
+Pass ``true`` or ``false`` to this action to enable or disable the slider. Example:
 
 ![sample](./assets/Disable.png)
 
@@ -71,7 +71,7 @@ Reads the currently selected values from the slider. This action returns a list 
 ![sample](./assets/getSelection.png)
 
 ### Set Selection Values
-Pass one or two parameters to this action to set the current selection o the slider. Example:
+Pass one or two parameters to this action to set the current selection of the slider. In the following example, only one value is passed, because the slider is configured to have one handle only.
 
 ![sample](./assets/setSelection.png)
 
