@@ -66,7 +66,7 @@ Pass ``true`` or ``false`` to this action to enable or disable the slider. Examp
 ![sample](./assets/Disable.png)
 
 ### Get Selected Values
-Reads the currently selected values from the slider. This action returns a list (array) with one or two values depending on the type of slider (single value selection, or value range selection). Example:
+Reads the currently selected values/labels from the slider. This action returns a list (array) with one or two values depending on the type of slider (single value selection, or value range selection). Example:
 
 ![sample](./assets/getSelection.png)
 
