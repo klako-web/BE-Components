@@ -29,7 +29,7 @@ Place the component on a page. It is recommended to wrap it by a block component
 ### Range Selector
 If this checkbox is checked, the slider is acting as a range selector. Two handles are shown which can be used to select a range.
 
-### Show Selected Values
+### Show Selected
 Currently selected values/labels are displayed above the slider handles.
 
 ### Show Tick Marks
