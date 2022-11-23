@@ -1,6 +1,8 @@
 # Endless Info Tours
 
+---
 >**This component has not been released yet!**
+---
 
 This is the documentation for the UI components ***Endless Info Tour*** and ***Endless Info Tour Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
@@ -10,8 +12,6 @@ This is the documentation for the UI components ***Endless Info Tour*** and ***E
 ![IconPro](./assets/iconTourPro.jpg)
 
 </center>
-
->**Disclaimer**: No support will be provided for the free (non-PRO) version of this component!
 
 <br>
 
@@ -178,4 +178,7 @@ Create a theme extension in Backendless UI Builder to change any of the followin
 
 ## Restrictions
 - The ``Display`` property of a component instance is not evaluated.
+
+## Support
+If you experience issues, you can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``tour``, or ``tourPro``. No support guarantee is provided for the free version!
 

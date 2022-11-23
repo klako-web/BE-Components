@@ -1,6 +1,8 @@
 # Endless Cropper
 
+---
 >**This component has not been released yet!**
+---
 
 This is the documentation for the UI components ***Endless Cropper*** and ***Endless Cropper Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
@@ -17,16 +19,12 @@ This is the documentation for the UI components ***Endless Cropper*** and ***End
 - Rotate the image
 - Zoom in/out
 - Crop a retangular area of interest 
-- Crope a circular area (**Pro-version only**)
+- Crop a circular area (**Pro-version only**)
 - Reduce size (width, height) and quality (for lossy image formats) (**Pro-version only**)
 - Change image type of original image to jpg, png, webp, etc. (**Pro-version only**)
 - Select the cropping result for further processing by Backendless NoCode logic (e.g. saving to the Backendless file system).
 
 All processing is done in the browser client. No transfer of original, large files to the backend just to process them there and to delete them afterwards.
-
-<br>
-
->**Disclaimer**: No support will be provided for the free (non-PRO) version of this component!
 
 <br>
 
@@ -214,6 +212,9 @@ Whenever you use codeless blocks to call component actions, you should wrap them
 The ``Paste from Clipboard`` action is special because it runs asynchronously. Therefore, errors are communicated via the event ``On Paste Error`` (see above event description).
 
 <br>
+
+## Support
+If you experience issues, you can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``cropper``, or ``cropperPro``. No support guarantee is provided for the free version!
 
 ## Reused libraries and components
 This product includes the following external code libraries/components, which are not owned by the author of ***Endless Cropper*** and ***Endless Cropper Pro***:

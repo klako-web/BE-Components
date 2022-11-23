@@ -1,6 +1,8 @@
 # Endless Popups
 
+---
 >**This component has not been released yet!**
+---
 
 This is the documentation for the UI components ***Endless Popup*** and ***Endless Popup Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
@@ -17,8 +19,6 @@ Create popups, toasts and alerts. Toasts are lightweight notifications windows w
 ![Icon](./assets/Sample1.png) &nbsp; &nbsp;&nbsp;&nbsp;
 ![IconPro](./assets/Sample2.png)
 
-
->**Disclaimer**: No support will be provided for the free (non-PRO) version of this component!
 
 ## General usage
 - Place the component somewhere on a page. There will be no immediate visible reflection in the published preview. Don't worry.
@@ -172,6 +172,9 @@ Popup window background color.
 By using the properties ``Show Class`` and ``Hide Class``, CSS-classes can be configured which control the animation behavior when showing and hiding a popup or toast. Animation classes can be defined in the Theme-Editor of Backendless UI-Builder.
 
 <br>
+
+## Support
+If you experience issues, you can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``popup``, or ``popupPro``. No support guarantee is provided for the free version!
 
 ## Reused libraries and components
 This product includes the following external code libraries/components, which are not owned by the author of ***Endless Popup*** and ***Endless Popup Pro***:

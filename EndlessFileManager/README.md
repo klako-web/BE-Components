@@ -1,6 +1,8 @@
 # Endless File Manager
 
+---
 >**This component has not been released yet!**
+---
 
 This is the documentation for the UI components ***Endless File Manager*** and ***Endless File Manager Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
@@ -16,10 +18,6 @@ Upload, download, view and organize files on the Backendless file system.
 
 
 ![Impression](./assets/Impression.png)
-
-<br>
-
->**Disclaimer**: No support will be provided for the free (non-Pro) version of this component!
 
 <br>
 
@@ -194,6 +192,9 @@ At time of writing this documentation, within the event handler, there is no acc
 A client side solution how to limit the upload size of an individual file has been depicted in section [Before Upload](#before-upload).
 
 <br>
+
+## Support
+If you experience issues, you can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``fileManager``, or ``fileManagerPro``. No support guarantee is provided for the free version!
 
 ## Reused libraries and components
 This product includes the following external code libraries/components, which are not owned by the authors of ***Endless File Manager*** and ***Endless Filemanger Pro***:

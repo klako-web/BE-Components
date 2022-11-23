@@ -1,6 +1,8 @@
 # Endless Image Cropper
 
+---
 >**This component has not been released yet!**
+---
 
 This is the documentation for the UI components ***Endless Image Cropper*** and ***Endless Image Cropper Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 

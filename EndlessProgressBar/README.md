@@ -1,6 +1,8 @@
 # Endless Progress Bar
 
+---
 >**This component has not been released yet!**
+---
 
 This is the documentation for the UI component ***Endless Progress Bar*** and ***Endless Progress Bar Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
@@ -10,8 +12,6 @@ This is the documentation for the UI component ***Endless Progress Bar*** and **
 ![Icon](./assets/IconProgressBarPro.jpg)
 
 </center>
-
-> <b>Disclaimer</b>: No support is provided for the free (non-PRO) version of this component!
 
 <br>
 
@@ -87,6 +87,9 @@ None.
 None.
 
 <br>
+
+## Support
+If you experience issues, you can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``progressBar``, or ``progressBarPro``. No support guarantee is provided for the free version!
 
 ## Reused libraries and components
 This product includes the following external code libraries/components, which are not owned by the authors of ***Endless Progress Bar*** and ***Endless Progress Bar Pro***:
