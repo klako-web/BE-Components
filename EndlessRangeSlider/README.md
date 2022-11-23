@@ -128,6 +128,6 @@ Create a theme extension and change any of the following less-variables (default
 No support guarantee is provided for this free version! You can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) though and assign the label ``rangeSlider``.
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the authors of ***Endless Range Slider Pro***:
+This product includes the following external code libraries/components, which are not owned by the authors of ***Endless Range Slider***:
 
 - [range-slider](https://github.com/slawomir-zaziablo/range-slider). Licensed under the [MIT License](https://github.com/slawomir-zaziablo/range-slider/blob/master/LICENSE).
