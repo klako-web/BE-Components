@@ -39,8 +39,8 @@ Tooltip(s) for the current selection are displayed above the slider.
 ### Show Tick Marks
 Tick marks are shown below the slider.
 
-### Tick Values
-Tick values can be defined in two ways:
+### Tick Labels
+Tick labels can be defined in two ways:
 1. Via a JSON array. Examples:
    ```
    ["low", "medium-low", "medium", "medium-high", "high"]
@@ -49,13 +49,13 @@ Tick values can be defined in two ways:
    [-40, -30, -20, -10, 0, 10, 20, 30, 40]
    ```
 
-2. Via a range/step JSON object with numerical values. Example:
+2. Via a range/step JSON object for numerical labels. Example:
    ```
    {"min": 50, "max": 150, "step": 10}
    ```
 
 ### Show Labels
-The labels set with ``Tick Values`` are shown below the slider.
+The labels set with ``Tick Labels`` are shown below the slider.
 
 ### Initial Selection
 The initial value of the first and, if ``Range Selector=true``, the second selection handle. The values have to be defined as a JSON array (e.g. ``[60, 90]`` ).
@@ -65,10 +65,19 @@ The initial value of the first and, if ``Range Selector=true``, the second selec
 ## Actions
 
 ### Set Enabled Status
+Pass ``true`` or ``false`` to enable or disable the slider. Example:
+
+![sample](./assets/Disable.png)
 
 ### Get Selected Values
+Reads the currently selected values from the slider. This action returns a list (array) with one or two values depending on the type of slider (single value selection, or value range selection). Example:
+
+![sample](./assets/getSelection.png)
 
 ### Set Selection Values
+Pass one or two parameters to this action to set the current selection o the slider. Example:
+
+![sample](./assets/setSelection.png)
 
 <br>
 
@@ -76,10 +85,16 @@ The initial value of the first and, if ``Range Selector=true``, the second selec
 
 ### On Change
 
+This event handler is called whenever the selection on a slider is changed:
+
+![sample](./assets/onChange.png)
+
+The context block ``Values`` is a list (array) of one or two string values.
+
 <br>
 
 ## Styles
-Create a theme extension and change any of the following less-variables (default setting as indicated):
+Create a theme extension and change any of the following less-variables (default settings as indicated):
 
 ```less
 @el-range-slider-fontFamily: Roboto, sans-serif;
