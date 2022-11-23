@@ -19,7 +19,7 @@ Select one value or a range of values with a slider.
 
 <br>
 
->**Disclaimer**: No support will be provided for this free version!
+>**Disclaimer**: No support guarantee is provided for this free version! You can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) though and assign the label ``rangeSlider``.
 
 <br>
 

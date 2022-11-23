@@ -1,5 +1,7 @@
 # Endless Progress Bar
 
+>**This component has not been released yet!**
+
 This is the documentation for the UI component ***Endless Progress Bar*** and ***Endless Progress Bar Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 <center>

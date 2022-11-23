@@ -1,5 +1,7 @@
 # Endless File Manager
 
+>**This component has not been released yet!**
+
 This is the documentation for the UI components ***Endless File Manager*** and ***Endless File Manager Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 <center>

@@ -1,5 +1,7 @@
 # Endless Cropper
 
+>**This component has not been released yet!**
+
 This is the documentation for the UI components ***Endless Cropper*** and ***Endless Cropper Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 <center>
