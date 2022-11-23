@@ -19,10 +19,6 @@ Select one value or a range of values with a slider.
 
 <br>
 
->**Disclaimer**: No support guarantee is provided for this free version! You can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) though and assign the label ``rangeSlider``.
-
-<br>
-
 ## General usage
 Place the component on a page. It is recommended to wrap it by a block component to be able to adjust width, padding and margins.
 
@@ -127,6 +123,9 @@ Create a theme extension and change any of the following less-variables (default
 ```
 
 <br>
+
+## Support
+No support guarantee is provided for this free version! You can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) though and assign the label ``rangeSlider``.
 
 ## Reused libraries and components
 This product includes the following external code libraries/components, which are not owned by the authors of ***Endless Range Slider Pro***:
