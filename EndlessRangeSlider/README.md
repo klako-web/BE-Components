@@ -49,6 +49,13 @@ Tick labels can be defined in two ways:
    ```
    {"min": 50, "max": 150, "step": 10}
    ```
+Tick labels can also be set by data binding. Assume the property ``tickLabels`` of the ``PageData`` model has been bound to the ``tickLabels`` property of a slider component:
+
+![binding](./assets/tickLabelsBinding.png)
+
+With codeless logic, it is then possible to set the current tick labels. The below example shows how to create a range from ``0`` to ``90`` with ticks at step size ``10``. 
+
+![binding](./assets/settingTickLabels.png)
 
 ### Show Labels
 The labels set with ``Tick Labels`` are displayed below the slider.
