@@ -101,25 +101,25 @@ Create a theme extension and change any of the following less-variables (default
 @el-range-slider-bar-color: #eee;
 @el-range-slider-bar-selected-color: @buttonContainedBackground;
 @el-range-slider-bar-disabled-color: @disabledColor;
-@el-range-slider-bar-height: 10px;  
+@el-range-slider-bar-height: 10px;  // 10px;
 
 @el-range-slider-pointer-color: #fff;
-@el-range-slider-pointer-width: 1.9em;   
-@el-range-slider-pointer-height: 1.3em;  
-@el-range-slider-pointer-borderRadius: 4px; 
+@el-range-slider-pointer-width: 1.9em;   // 1.9em
+@el-range-slider-pointer-height: 1.3em;  // 1.3em
+@el-range-slider-pointer-borderRadius: 4px;  //4px;
 @el-range-slider-pointer-marginTop: 0;
 
-@el-range-slider-scale-marginTop: 10px;  
+@el-range-slider-scale-marginTop: 10px;   // 10px;
 
-@el-range-slider-tooltip-fontSize: 0.9em;
-@el-range-slider-tooltip-fontColor: @appTextColor;
-@el-range-slider-tooltip-fontWeight: bold;
-@el-range-slider-tooltip-fontStyle: normal;
-@el-range-slider-tooltip-background: @appBackgroundColor;
-@el-range-slider-tooltip-border: 1px solid @el-range-slider-bar-selected-color; 
-@el-range-slider-tooltip-minWidth: 3.5em;
-@el-range-slider-tooltip-width: max-content;
-@el-range-slider-tooltip-height: auto;
+@el-range-slider-selectionMarker-fontSize: 0.9em;
+@el-range-slider-selectionMarker-fontColor: @appTextColor;
+@el-range-slider-selectionMarker-fontWeight: bold;
+@el-range-slider-selectionMarker-fontStyle: normal;
+@el-range-slider-selectionMarker-background: @appBackgroundColor;
+@el-range-slider-selectionMarker-border: 1px solid @el-range-slider-bar-selected-color;  // #00969b;
+@el-range-slider-selectionMarker-minWidth: 3.5em;
+@el-range-slider-selectionMarker-width: max-content;
+@el-range-slider-selectionMarker-height: auto;
 ```
 
 <br>
