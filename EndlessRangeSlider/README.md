@@ -49,6 +49,9 @@ Tick labels can be defined in two ways:
    ```
    {"min": 50, "max": 150, "step": 10}
    ```
+
+>**Note:** Do not mix text values and numerical values. Once you've set tick labels as numerical values, you should use numerical values all over the place, for instance, when using the action *Set Selection Values*.
+
 Tick labels can also be set by data binding. Assume the property ``tickLabels`` of the ``PageData`` model has been bound to the ``tickLabels`` property of a slider component:
 
 ![binding](./assets/tickLabelsBinding.png)
