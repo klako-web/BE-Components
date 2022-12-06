@@ -1,15 +1,11 @@
 # Endless Progress Bar
 
----
->**This component has not been released yet!**
----
 
-This is the documentation for the UI component ***Endless Progress Bar*** and ***Endless Progress Bar Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
+This is the documentation for the UI component ***Endless Progress Bar*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 <center>
 
-![Icon](./assets/IconProgressBar.jpg) &nbsp; &nbsp; &nbsp; &nbsp;
-![Icon](./assets/IconProgressBarPro.jpg)
+![Icon](./assets/IconProgressBar.jpg) 
 
 </center>
 
@@ -33,19 +29,15 @@ Place the component on a page where it should appear. It always renders with 100
 A numerical value which indicates the degree of completion (extent of the progress bar). Use data binding to set and change this value from within your application.
 
 ### Percentage
-(**Pro-version only**)
 If the checkbox is selected (default), the ``Progress``- property is interpreted as a percentage and the %-sign is shown. For the free version, ``Progress`` is always interpreted as a percentage.
 
 ### Max Progress
-(**Pro-version only**)
 The maximal progress value which can be achieved. Defaults to ``100``.
 
 ### Height
-(**Pro-version only**)
 The height of the progress bar. Can be in any applicable CSS-units (e.g., ``px``, ``em``, ``%``).
 
 ### Border Radius
-(**Pro-version only**)
 The curvature of the progress bar corners. Can be in any applicable CSS-units (e.g., ``px``, ``em``, ``%``).
 
 ### Color
@@ -55,7 +47,6 @@ Progress bar color.
 The color of the background not covered by the progress bar.
 
 ### Label
-(**Pro-version only**)
 Instead of the numerical value ``Progress``, any text label can be shown.
 
 ### Label Size
@@ -65,16 +56,13 @@ The font size of the progress value or of the label.
 The font color of the progress value or of the label.
 
 ### Label Alignment
-(**Pro-version only**)
 The label or progress value can be shown within the progress bar at positions ``Left``, ``Right``, ``Center``, or it can be shown ``Outside`` of the entire bar. 
 
 ### Duration
-(**Pro-version only**)
 Numerical value for setting the bar transition duration in seconds.
 
 ### Timing Function
-(**Pro-version only**)
-Affects how the progress bar transitions towards the target progress value.
+Affects how the progress bar transitions towards the target progress value. Choose one of the predefined timing functions.
 
 <br>
 
@@ -89,9 +77,11 @@ None.
 <br>
 
 ## Support
-If you experience issues, you can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``progressBar``, or ``progressBarPro``. No support guarantee is provided for the free version!
+No support guarantee is provided for this free version! Though, if you experience issues, you can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``progressBar``. 
+
+<br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the authors of ***Endless Progress Bar*** and ***Endless Progress Bar Pro***:
+This product includes the following external code libraries/components, which are not owned by the authors of ***Endless Progress Bar***.
 
 - [react-progress-bar](https://github.com/KaterinaLupacheva/react-progress-bar). Licensed under the [MIT License](https://github.com/KaterinaLupacheva/react-progress-bar/blob/master/LICENSE).
