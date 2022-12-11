@@ -127,7 +127,7 @@ This handler is called once a command is recognized. This is the place where you
 In this example, the recognized command is compared with English and German terms. In addition, the limit timer is reset, or stopped, depending on the spoken command.
 
 ### On Listening Change
-This handler is called whenever there is change in the listening status. The context block ``Listening`` can take values ``true`` or ``false``.
+This handler is called whenever the listening status is changing. The context block ``Listening`` can take values ``true`` or ``false``.
 
 ### On Error
 
