@@ -18,19 +18,19 @@ Developers can create apps with which users can issue commands verbally via the 
 ## Technical Setup and Restrictions
 >>**Please read this carefully!**
 
-+ ***Speech Commander*** is connecting to a remote service provider which is providing the actual service of speech-to-text recognition. Therefore, ***Speech Commander*** requires an active internet connection. It will not work offline. Due to the remote communication, voice speed depends on the available communication bandwidth and service provider processing capacities. Don't try to build apps with ***Speech Commander*** which require real-time speech processing.
++ ***Speech Commander*** is connecting to a remote service provider which is providing the actual service of speech-to-text recognition. Therefore, ***Speech Commander*** requires an active internet connection. It will not work offline. Due to the remote communication, recognition delays depend on the available communication bandwidth and service provider processing capacities. Don't try to build apps with ***Speech Commander*** which require real-time speech processing.
 + Multiple service providers are supported. If a user triggers voice recognition, voice data is sent over the internet to servers of the selected service provider (Google, Apple, Speechly.com and others). These servers can be located in a different country than the actual user. To comply with your local data protection regulations, you might need to take some measures, like informing your users about this data transfer. Please check, whether you can comply to your local data protection laws before buying ***Speech Commander***. 
 + Currently, the following service providers are supported:
    + **Native**: involves Google-, Apple-servers and maybe others depending on the browser used.
    + [**speechly.com**](https://speechly.com): sends data to api.speechly.com.
 
 ### **Native** service provider
-This setting leverages the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) of the browser. This means, it depends on the current browser which capabilities are available and to which servers speech data is sent. [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) is not (fully) supported by all browsers. There are three levels of support:
+Leverages the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) of the browser. It depends on the used browser which capabilities are available and to which servers speech data is sent. [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) is not (fully) supported by all browsers. There are three levels of support:
 - fully supported (e.g. Chrome on Desktop)
 - no support for continuous listening (e.g. Chrome on Android)
 - no support at all (e.g. Firefox)
 
-You should test the current browser coverage carefully, as this evolves over time. To get the supported feature of a browser, use the action ``getStatus``.
+You should test browser capabilities carefully, as this evolves over time. To get the supported feature of a browser, use the action ``Get Status``.
 
 Although the browser support range for the native service provider is limited, there is a broad range of languages which are supported.
 
@@ -49,6 +49,9 @@ Place the component on a page. Depending on your configuration, the component wi
 <br>
 
 ## Properties
+
+### Provider
+Can take the values ``Native`` and ``speechly.com``. See section [Technical Setup and Restrictions](#technical-setup-and-restrictions).
 
 ### Commands
 A list (array) of terms which shall be recognized. These can be specified either in the properties view of the component, or programmatically. If you use the properties view, press the "CHANGE JSON"-Button to enter a JSON-Array, e.g.:
@@ -73,9 +76,6 @@ If set, speech recognition is more tolerant when recognizing commands.
 
 ### Fuzzy Threshold
 Controls the probability threshold applied for command recognition. Default value is ``0.2``.
-
-### Provider
-Can take values ``Native`` and ``speechly.com``. See section [Technical Setup and Restrictions](#technical-setup-and-restrictions).
 
 <br>
 
@@ -130,11 +130,45 @@ In this example, the recognized command is compared with English and German term
 This handler is called whenever the listening status is changing. The context block ``Listening`` can take values ``true`` or ``false``.
 
 ### On Error
+Speech recognition is an asynchronous process. Therefore, errors are communicated via this dedicated event handler. Contex blocks are available for the rror code and the error message:
+
+![on Error](./assets/onError.png)
+
+The following errors are handled:
+
+| Code  |  Message                            |
+| ----- | ----------------------------------- |
+| 101   | Not allowed to access microphone! |
+| 102   | This browser does not support speech recognition |
+| 103   | This browser does not support continuous listening |
+| 103   | Cannot create speechly.com provider. Check your speechly.com appId |
+
+<br>
+
+## Styling the transcript
+If the property ``Show Transript`` is set, a Block-UI-component containing the transcript text is rendered. By using the ``Classes``-property of ***Speech Commander***, you can apply any styling to this Box and the included text. For instance, create a new theme extension with the following content:
+```css
+.transcriptClass {
+  color: blue;    // font color
+  font-size: 20px;
+  padding: 10px;  // box padding
+  display: flex;
+  justify-content: center;  // center output
+  border: 4px dotted lightGreen;  // box border
+}
+```
+Then, assign this class to the ``Classes``-property in the component properties view to see its effect:
+
+![Classes](./assets/classes.png)
 
 <br>
 
 ## Support
-No support guarantee is provided for this free version! You can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) though and assign the label ``speechCommander``.
+You can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``speechCommander``.
+
+<br>
 
 ## Reused libraries and components
-.
+
+- [react-speech recognition](https://github.com/JamesBrill/react-speech-recognition) under [MIT license](https://github.com/JamesBrill/react-speech-recognition/blob/master/LICENSE). 
+- [speech-recognition-polyfill](https://github.com/speechly/speech-recognition-polyfill) under [MIT license](https://github.com/speechly/speech-recognition-polyfill/blob/main/LICENSE). 
