@@ -23,4 +23,3 @@ Components are usually offered as two variants. A free version and a Pro-version
 | <p align="center"> [ <img src="./EndlessCropper/assets/Icon.png" width="54%"/> ](./EndlessCropper/README.md) | [Crop, resize, compress, rotate and zoom images from your device or device camera](./EndlessCropper/README.md). Save the result to the Backendless file system.  |
 | <p align="center"> [ <img src="./EndlessFileManager/assets/IconFilemanager.png" width="52%"/> ](./EndlessFileManager/README.md) | [Upload, download, view and organize files on the Backendless file system.](./EndlessFileManager/README.md) Work with the well-known file explorer user experience on desktops and tablets. Including Drag & Drop support on desktop. |
 | <p align="center"> [ <img src="./EndlessContextMenu/assets/C-Menu.png" width="52%"/> ](./EndlessContextMenu/README.md) | [For desktop web applications, define context menus which appear on right-mouse-click.](./EndlessContextMenu/README.md) |
-
