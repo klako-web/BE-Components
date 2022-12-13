@@ -99,8 +99,25 @@ The following pre-defined errors can be raised:
 
 <br>
 
+## Styles
+Create a theme extension and change any of the following less-variables (default settings as indicated):
+
+```css
+@el-context-menu-width: 10em;
+@el-context-menu-background: @appBackgroundColor;
+@el-context-menu-border: 1px solid lightGrey;
+@el-context-menu-boxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+@el-context-menu-fontSize: 0.85em;
+@el-context-menu-hoverBackground: lightGrey;
+@el-context-menu-separatorColor: lightGrey;
+```
+
+<br>
+
 ## Support 
 You can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``contextMenu``.
+
+<br>
 
 ## Reused libraries and components
 This product includes the following external code libraries/components, which are not owned by the authors of ***Endless Context Menu***:
