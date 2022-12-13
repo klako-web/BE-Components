@@ -177,7 +177,7 @@ Create a theme extension in Backendless UI Builder to change any of the followin
 <br>
 
 ## Restrictions
-- The ``Display`` property of a component instance is not evaluated.
+- The ``Display`` and ``Classes`` property of a component instance are not evaluated.
 
 ## Support
 If you experience issues, you can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``tour``, or ``tourPro``. No support guarantee is provided for the free (non-Pro) version!
