@@ -4,7 +4,7 @@
 >**This component has not been released yet!**
 ---
 
-This is the documentation for the UI component ***Endless Context Menu Pro*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
+This is the documentation for the UI component ***Endless Context Menu*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 <center>
 
@@ -98,9 +98,9 @@ The following pre-defined errors can be raised:
 <br>
 
 ## Support 
-You can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``contextMenuPro``.
+You can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``contextMenu``.
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the authors of ***Endless Context Menu Pro***:
+This product includes the following external code libraries/components, which are not owned by the authors of ***Endless Context Menu***:
 
 - [vanilla-context-menu](https://github.com/GeorgianStan/vanilla-context-menu). Licensed under the [MIT License](https://github.com/GeorgianStan/vanilla-context-menu/blob/master/LICENSE).
