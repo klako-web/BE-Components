@@ -216,6 +216,8 @@ The ``Paste from Clipboard`` action is special because it runs asynchronously. T
 ## Support
 If you experience issues, you can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``cropper``, or ``cropperPro``. No support guarantee is provided for the free version!
 
+<br>
+
 ## Reused libraries and components
 This product includes the following external code libraries/components, which are not owned by the author of ***Endless Cropper*** and ***Endless Cropper Pro***:
 

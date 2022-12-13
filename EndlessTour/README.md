@@ -180,5 +180,5 @@ Create a theme extension in Backendless UI Builder to change any of the followin
 - The ``Display`` property of a component instance is not evaluated.
 
 ## Support
-If you experience issues, you can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``tour``, or ``tourPro``. No support guarantee is provided for the free version!
+If you experience issues, you can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``tour``, or ``tourPro``. No support guarantee is provided for the free (non-Pro) version!
 
