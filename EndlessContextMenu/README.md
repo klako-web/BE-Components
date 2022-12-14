@@ -103,6 +103,8 @@ The following pre-defined errors can be raised:
 Create a theme extension and change any of the following less-variables (default settings as indicated):
 
 ```css
+@el-context-menu-width: 9em;
+@el-context-menu-textColor: @appTextColor;
 @el-context-menu-background: @appBackgroundColor;
 @el-context-menu-border: 1px solid lightGrey;
 @el-context-menu-boxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

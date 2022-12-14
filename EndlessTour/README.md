@@ -32,7 +32,7 @@ https://user-images.githubusercontent.com/69795385/188916715-0b5e0aa4-6fe7-405e-
 
 The Action ``Start`` receives the parameter ``Step List`` which must be a list of objects. Each object represents one step of the tour. Each object in the list can contain the following properties:
 - ``title`` (optional): The title of the tooltip for a step. Can contain HTML-tags.
-- ``anchor`` (optional): The ``Id`` of the HTML-element to which the tooltip shall relate to. Currently, in Backendless UI-Builder, anchors can be assigned to Block-UI-Elements only.Therefore, if you want to show a tooltip for a single UI-element or a group of UI-elements, you have to wrap them by a block and assign an anchor to this block. If you don't pass the ``anchor``-parameter to the ``Start``-action, the tooltip will be centered on the page without any relation to a UI-element.
+- ``anchor`` (optional): The ``Id`` of the HTML-element to which the tooltip shall relate to. Currently, in Backendless UI-Builder, anchors can be assigned to Block-UI-Elements only. Therefore, if you want to show a tooltip for a single UI-element or a group of UI-elements, you have to wrap them by a block and assign an anchor to this block. If you don't pass the ``anchor``-parameter to the ``Start``-action, the tooltip will be centered on the page without any relation to a UI-element.
 - ``message``: The information you want to convey by the tooltip. Can contain HTML, for instance, ``<image>`` and ``<link>``-tags, or any HTML-formatting.
 
 <br>
@@ -46,9 +46,6 @@ This action is exposed via a Backendless Codeless Block. See section [General us
 <br>
 
 ## Properties
-
-### Classes
-**(Pro-version only)** Can be used to style the tooltips by entering a CSS-class defined with the Theme-editor of UI-Builder. Only one class is considered for styling. See section [Styling](#styling) for an example.
 
 ### Next Step Label
 **(Pro-version only)** The text label on the button which triggers the next step of a tour. Can contain HTML-tags. This label can be set by a logic handler or by data binding.
