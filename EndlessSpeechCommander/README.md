@@ -43,6 +43,11 @@ Visit [speechly.com](https:speechly.com) to learn about the free and paid offeri
 
 <br>
 
+## Try yourself
+Visit [this test page](https://speech.bee-u.life/?page=speech) to see ***Speech Commander*** in action.
+
+<br>
+
 ## General usage
 Place the component on a page. Depending on your configuration, the component will output a realtime transcript while someone is talking.
 
