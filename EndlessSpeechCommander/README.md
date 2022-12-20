@@ -63,15 +63,15 @@ A list (array) of terms which shall be recognized. These can be specified either
 ```
 ["go left", "go right","stop listening"]
 ```
-As an example of changing commands via codeless blocks, assume you want to support two languages. You could define two command sets in the "On Before Page" handler:
+As an example of changing commands via codeless blocks, assume you want to support two languages. You could define two command sets in the "On Before Page Enter" handler:
 
 ![Settings](./assets/onBeforePage.png)
 
-In addition, you need to bind the property ``Commands`` of the UI component to the property ``commands`` Page Data:
+In addition, you need to bind the property ``Commands`` of the UI component to the property ``commands`` of Page Data:
 
 ![binding](./assets/binding.png)
 
-If ***Speech Commander*** is currently listening, trigger the ``Stop``-action before changing the commands.
+If ***Speech Commander*** is currently listening, trigger the ``Stop``-action before changing the commands or language.
 
 ### Show Transcript
 The transcript is the collection of recognized words over time. If this checkbox is set, ***Speech Commander*** renders an output text box which shows the transcript while you are talking.
@@ -80,7 +80,7 @@ The transcript is the collection of recognized words over time. If this checkbox
 If set, speech recognition is more tolerant when recognizing commands.
 
 ### Fuzzy Threshold
-Controls the probability threshold applied for command recognition. Default value is ``0.2``.
+Controls the probability threshold applied for command recognition. Default value is ``0.2``. The smaller this threshold the higher is the probability of false positive command recognition.
 
 <br>
 
@@ -95,7 +95,7 @@ In this example, in addition to starting the listening process, a timer is used 
 
 Note, that some browsers (``Native`` providers) support speech recognition in general, but not "continuous listening". This means these browsers will stop listening after having recognized a command.
 
-If your app is trigering ``Start Listening`` for the first time in a browser, the browser will ask the user for the permission to use the microphone. The user has to grant permission to enable speech recognition. These permissions can be revoked via the browser settings.
+If your app is triggering ``Start Listening`` for the first time in a browser, the browser will ask the user for the permission to use the microphone. The user has to grant permission to enable speech recognition. These permissions can be revoked via the browser settings.
 
 ### Stop Listening
 Stops the speech recognition process.
@@ -122,7 +122,7 @@ Returns an object with information about the current speech recognition capabili
 ## Events
 
 ### On Result
-This handler is called once a command is recognized. This is the place where you compare the recognized command to your command list to trigger the respective action. The following context blocks are available:
+This handler is called once a command has been recognized. This is the place where you compare the recognized command to your command list to trigger the respective action. The following context blocks are available:
 - ``Match``: The command which has been recognized
 - ``Spoken Phrase``: The phrase containing the command
 - ``Similarity``:  If fuzzy recognition is active, this number between 0 and 1 indicates the reliability of the recognition. Example:
@@ -135,7 +135,7 @@ In this example, the recognized command is compared with English and German term
 This handler is called whenever the listening status is changing. The context block ``Listening`` can take values ``true`` or ``false``.
 
 ### On Error
-Speech recognition is an asynchronous process. Therefore, errors are communicated via this dedicated event handler. Contex blocks are available for the rror code and the error message:
+Speech recognition is an asynchronous process. Therefore, errors are communicated via this dedicated event handler. Context blocks are available for the error code and the error message:
 
 ![on Error](./assets/onError.png)
 
@@ -175,5 +175,5 @@ You can [open an issue](https://github.com/klako-web/Endless-Components/issues/n
 
 ## Reused libraries and components
 
-- [react-speech recognition](https://github.com/JamesBrill/react-speech-recognition) under [MIT license](https://github.com/JamesBrill/react-speech-recognition/blob/master/LICENSE). 
+- [react-speech-recognition](https://github.com/JamesBrill/react-speech-recognition) under [MIT license](https://github.com/JamesBrill/react-speech-recognition/blob/master/LICENSE). 
 - [speech-recognition-polyfill](https://github.com/speechly/speech-recognition-polyfill) under [MIT license](https://github.com/speechly/speech-recognition-polyfill/blob/main/LICENSE). 
