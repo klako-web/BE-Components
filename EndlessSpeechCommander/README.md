@@ -146,7 +146,7 @@ The following errors are handled:
 | 101   | Not allowed to access microphone! |
 | 102   | This browser does not support speech recognition |
 | 103   | This browser does not support continuous listening |
-| 103   | Cannot create speechly.com provider. Check your speechly.com appId |
+| 104   | Cannot create speechly.com provider. Check your speechly.com appId |
 
 <br>
 
