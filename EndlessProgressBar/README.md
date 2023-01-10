@@ -27,7 +27,7 @@ Place the component on a page where it should appear. It always renders with 100
 A numerical value which indicates the degree of completion (extent of the progress bar). Use data binding to set and change this value from within your application.
 
 ### Percentage
-If the checkbox is selected (default), the ``Progress``- property is interpreted as a percentage and the %-sign is shown. For the free version, ``Progress`` is always interpreted as a percentage.
+If the checkbox is selected (default), the ``Progress``- property is interpreted as a percentage and the %-sign is shown. 
 
 ### Max Progress
 The maximal progress value which can be achieved. Defaults to ``100``.
