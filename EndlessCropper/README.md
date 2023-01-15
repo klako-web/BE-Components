@@ -22,7 +22,7 @@ This is the documentation for the UI components ***Endless Cropper*** and ***End
 - Crop a circular area (**Pro-version only**)
 - Reduce size (width, height) and quality (for lossy image formats) (**Pro-version only**)
 - Change image type of original image to jpg, png, webp, etc. (**Pro-version only**)
-- Select the cropping result for further processing by Backendless NoCode logic (e.g. saving to the Backendless file system).
+- Select the cropping result for further processing by Backendless No-Code logic (e.g. saving to the Backendless file system).
 
 All processing is done in the browser client. No transfer of original, large files to the backend just to process them there and to delete them afterwards.
 
@@ -46,7 +46,7 @@ For each Codeless Block of an action, you have to select the ``Id`` of the custo
 ### Select
 *Input parameters:* None
 
-An image selection dialog is shown, which depends on the device. On mobiles, you can typically capture a live camera image in addition to selecting an existing image from the device.
+An image selection dialog is shown, which depends on the device. On mobiles, you can typically capture a live camera image, or an existing image from the device.
 
 *Example*:
 
@@ -65,7 +65,7 @@ An image is inserted from the device clipboard into the canvas. If this is done 
 
 ![Paste Image](./assets/paste.png)
 
-> **Note:** The paste action does not work on all browsers (yet). For instance, Firefox is not supporting the required permission. Therefore, if you want to leverage this action, test with the browser versions relevant for you.
+> **Note:** The paste action does not work on all browsers (yet). For instance, Firefox is not supporting the required permission. Therefore, if you want to leverage this action, test with the browser versions relevant to you.
 
 <br>
 
@@ -151,8 +151,17 @@ A selected image is removed from the cropper canvas.
 
 ## Properties
 
-### Circular Stencil
-(**Pro-version only**) By default *Cropper* is showing a retangular crop area. When setting this checkbox, a circular crop area is used.
+### Image Restriction
+(**Pro-version only**) Determines how the inital image is displayed in a constrained canvas. The property can take the following values:
+- *Fit Area*: The image is scaled to be completely visible within the canvas. If the image aspect ratio does not match the canvas aspect ratio. the canvas will not be filled completely.
+- *Fill Area*: The image is scaled to fit at least one dimension of the canvas. You can move and zoom into the image to see other parts, but the cropping area can never extend beyond the canvas.
+- *Stencil*: Initially similar to *Fit Area* In addition you can move the image around and zoom out.
+- *None*: No restriction moving and resizing the image.
+
+For the free version of ***Cropper***, image restriction is always set to *Fit Area*.
+
+### Stencil Shape
+(**Pro-version only**) You can choose between a *rectangular*, or *circular* cropping area (= *stencil*). By default, a rectangular stencil is shown. 
 
 ![Circular Cropper](./assets/circular.png)
 
@@ -162,7 +171,13 @@ In this example, the original image has a width of 1920 pixel, but is displayed 
 
 The ``dataURL`` crop result is assigned to a ``Page Data`` property ``preview`` which is bound to the "Source URL Logic" of an Image UI-component.
 
-When cropping a circular area, the background of the resulting image is set to white with 100% transparency. To leverage this, you have to choose an output image format which supports transparent image parts (png, or webp).
+When cropping a circular area, the background of the resulting image is set to white with 100% transparency. To leverage this, you have to choose an output image format which supports transparent image parts (``png``, or ``webp``).
+
+### Aspect Ratio
+(**Pro-version only**) The property *Aspect Ratio* can take three types of values:
+- The value *free*: Default value. The initial aspect ratio of the resizable crop area equals the aspect ratio of the loaded image. The aspect ratio can then be changed by a user.
+- *\<any number\>*: The aspect ratio of the crop area is set to this number. It is kept constant even if a user is resizing the crop area.
+- The value *image*: The aspect ratio is set to the aspect ratio of the loaded image and cannot be changed by the user.
 
 <br>
 
