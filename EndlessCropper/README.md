@@ -52,8 +52,6 @@ An image selection dialog is shown, which depends on the device. On mobiles, you
 
 ![On Click Handler](./assets/select.png)
 
-<br>
-
 ### Paste from Clipboard
 (**Pro-version only**)
 
@@ -66,8 +64,6 @@ An image is inserted from the device clipboard into the canvas. If this is done 
 ![Paste Image](./assets/paste.png)
 
 > **Note:** The paste action does not work on all browsers (yet). For instance, Firefox is not supporting the required permission. Therefore, if you want to leverage this action, test with the browser versions relevant to you.
-
-<br>
 
 ### Crop
 Extracts the image from the current cropping area. At the same time, the image can be scaled along its width or height dimension and the image encoding type can be chosen (jpeg, webp, png, etc.). For image types supporting lossy compression (e.g. jpeg, webp) the amount of compression can be specified. **Scaling and changing image types is available in the Pro-version only**:
@@ -108,8 +104,6 @@ The cropped image is
 
 Then, some string manipulation is done to construct the new filename, which needs to have the ``webp``-extension. Finally, the file is saved to the Backendless file system by using ``arrayBuffer`` image data.
 
-<br>
-
 ### Rotate
 
 The image is rotated on the canvas.
@@ -120,8 +114,6 @@ The image is rotated on the canvas.
 *Example*:
 
 ![Rotate Image](./assets/rotate.png)
-
-<br>
 
 ### Zoom In/Out
 The image is (de)magnified on the canvas.
@@ -137,12 +129,10 @@ and content is not changed by this operation.
 
 ![Zoom Image](./assets/zoom.png)
 
-<br>
 
 ### Reset
 The cropper is set back to its initial state. This means zoom factor is set to ``1`` and the crop area is set to its default size.
 
-<br>
 
 ### Remove Image
 A selected image is removed from the cropper canvas.
