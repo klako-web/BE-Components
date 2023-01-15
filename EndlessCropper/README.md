@@ -224,6 +224,6 @@ If you experience issues, you can [open an issue](https://github.com/klako-web/E
 <br>
 
 ## Reused libraries and components
-This product includes the following external code libraries/components, which are not owned by the author of ***Endless Cropper*** and ***Endless Cropper Pro***:
+This product includes the following external code libraries/components:
 
 - [react-advanced-cropper](https://github.com/advanced-cropper/react-advanced-cropper) licensed under the [MIT License](https://github.com/advanced-cropper/react-advanced-cropper/blob/master/LICENSE)
