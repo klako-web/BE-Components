@@ -71,9 +71,10 @@ Extracts the image from the current cropping area. At the same time, the image c
 *Input parameters:*
 
 - ``Compression Ratio``: (**Pro-version only**) Optional. A number between 0 and 1. The default is ``0.8``. Is applied if the resulting image type supports lossy compression (e.g., jpg or webp). For the free version, this ratio is fixed at ``0.8``.
-- ``Scaling Dimension``: (**Pro-version only**) Optional. Valid values are "width" and "height". Before uploading the image to the Backendless file system, it can be scaled along either its width or height dimension. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixels`` is specified, the extracted or saved image will not be scaled.
-- ``Scaling Pixels``: (**Pro-version only**) Optional. The amount of pixels to be set for the selected scaling dimension. The number of pixels for the other dimension is computed in a way that does not change the image aspect ratio. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixels`` is specified, the extracted or saved image will not be scaled.
 - ``Image Type``: (**Pro-version only**) Optional. The image encoding type ("jpg", "png", etc.) for cropped images. If omitted, the type is taken from the original filename.
+- ``Scaling Dimension``: (**Pro-version only**) Optional. Valid values are "width" and "height". Before uploading the image to the Backendless file system, it can be scaled along either its width or height dimension. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixels`` is specified, the extracted or saved image will not be scaled.
+- ``Scaling Pixels``: (**Pro-version only**) Optional. The amount of pixels to be set for the selected scaling dimension. The number of pixels for the other dimension is computed in a way that does not change the image aspect ratio. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixels`` is specified, the cropped image will not be scaled.
+- ``Download``: A boolean value to indicate whether the cropped image shall be downloaded to the device. A device specific download dialog appears. Depending on browser settings, the download into a standard download folder might even start automatically.
 
 *Return value:*
 
@@ -100,7 +101,7 @@ This example shows how to crop an image and save it to the Backendless file syst
 The cropped image is
 - compressed with a ratio of ``0.8`` (default value)
 - converted into a ``webp``-image
-- scaled to 256 pixel along the horizontal direction, whereas the height is chosen to keep the aspect ratio
+- scaled to 240 pixel along the horizontal direction, whereas the height is set to keep the aspect ratio
 
 Then, some string manipulation is done to construct the new filename, which needs to have the ``webp``-extension. Finally, the file is saved to the Backendless file system by using ``arrayBuffer`` image data.
 
@@ -145,13 +146,19 @@ A selected image is removed from the cropper canvas.
 (**Pro-version only**) Determines how the inital image is displayed in a constrained canvas. The property can take the following values:
 - *Fit Area*: The image is scaled to be completely visible within the canvas. If the image aspect ratio does not match the canvas aspect ratio. the canvas will not be filled completely.
 - *Fill Area*: The image is scaled to fit at least one dimension of the canvas. You can move and zoom into the image to see other parts, but the cropping area can never extend beyond the canvas.
-- *Stencil*: Initially similar to *Fit Area* In addition you can move the image around and zoom out.
-- *None*: No restriction moving and resizing the image.
+- *Stencil*: Initially similar to *Fit Area*. In addition you can move the image around and zoom out.
+- *None*: No restriction for moving and resizing the image.
 
 For the free version of ***Cropper***, image restriction is always set to *Fit Area*.
 
+### Aspect Ratio
+(**Pro-version only**) The property *Aspect Ratio* can take three types of values:
+- The empty value is the default value. The initial aspect ratio of the resizable crop area equals the aspect ratio of the loaded image. The aspect ratio can then be changed by a user.
+- *\<any number\>*: The aspect ratio of the crop area is set to this number. It is kept constant even if a user is resizing the crop area.
+- The value "*image*": The aspect ratio is set to the aspect ratio of the loaded image and cannot be changed by the user.
+
 ### Stencil Shape
-(**Pro-version only**) You can choose between a *rectangular*, or *circular* cropping area (= *stencil*). By default, a rectangular stencil is shown. 
+(**Pro-version only**) You can choose between a *rectangular*, and *circular* cropping area (= *stencil*). By default, a rectangular stencil is shown. An example of a circular stencil is shown here:
 
 ![Circular Cropper](./assets/circular.png)
 
@@ -159,15 +166,13 @@ In this example, the original image has a width of 1920 pixel, but is displayed 
 
 ![Circular Cropper](./assets/cropCircular.png)
 
-The ``dataURL`` crop result is assigned to a ``Page Data`` property ``preview`` which is bound to the "Source URL Logic" of an Image UI-component.
+The property ``dataURL`` of the object ``cropResult`` is assigned to the ``Page Data`` property ``preview`` which is bound to the "Source URL Logic" of an Image UI-component.
 
-When cropping a circular area, the background of the resulting image is set to white with 100% transparency. To leverage this, you have to choose an output image format which supports transparent image parts (``png``, or ``webp``).
+When cropping a circular area, the background of the resulting image is set to white with 100% transparency. To leverage transparency, you have to choose an output image format which supports transparent image parts (``png``, or ``webp``).
 
-### Aspect Ratio
-(**Pro-version only**) The property *Aspect Ratio* can take three types of values:
-- The value *free*: Default value. The initial aspect ratio of the resizable crop area equals the aspect ratio of the loaded image. The aspect ratio can then be changed by a user.
-- *\<any number\>*: The aspect ratio of the crop area is set to this number. It is kept constant even if a user is resizing the crop area.
-- The value *image*: The aspect ratio is set to the aspect ratio of the loaded image and cannot be changed by the user.
+> **Note**: You get a real circular and fixed shape only if you choose an *Aspect Ratio* of 1. Otherwise, an oval stencil is created.
+
+![Oval Cropper](./assets/ovalStencil.png)
 
 <br>
 
