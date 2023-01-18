@@ -46,7 +46,7 @@ For each Codeless Block of an action, you have to select the ``Id`` of the custo
 ### Select
 *Input parameters:* None
 
-An image selection dialog is shown, which depends on the device. On mobiles, you can typically capture a live camera image, or an existing image from the device.
+An image selection dialog is shown, which depends on the device. On mobiles, you can typically capture a live camera image, or select an existing image from the device.
 
 *Example*:
 
@@ -72,9 +72,9 @@ Extracts the image from the current cropping area. At the same time, the image c
 
 - ``Compression Ratio``: (**Pro-version only**) Optional. A number between 0 and 1. The default is ``0.8``. Is applied if the resulting image type supports lossy compression (e.g., jpg or webp). For the free version, this ratio is fixed at ``0.8``.
 - ``Image Type``: (**Pro-version only**) Optional. The image encoding type ("jpg", "png", etc.) for cropped images. If omitted, the type is taken from the original filename.
-- ``Scaling Dimension``: (**Pro-version only**) Optional. Valid values are "width" and "height". Before uploading the image to the Backendless file system, it can be scaled along either its width or height dimension. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixels`` is specified, the extracted or saved image will not be scaled.
+- ``Scaling Dimension``: (**Pro-version only**) Optional. Valid values are "width" and "height". The cropped image can be scaled along either its width or height dimension. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixels`` is specified, the cropped image will not be scaled.
 - ``Scaling Pixels``: (**Pro-version only**) Optional. The amount of pixels to be set for the selected scaling dimension. The number of pixels for the other dimension is computed in a way that does not change the image aspect ratio. If neither the parameter ``Scaling Dimension`` nor ``Scaling Pixels`` is specified, the cropped image will not be scaled.
-- ``Download``: A boolean value to indicate whether the cropped image shall be downloaded to the device. A device specific download dialog appears. Depending on browser settings, the download into a standard download folder might even start automatically.
+- ``Download``: A boolean value to indicate whether the cropped image shall be downloaded to the device. A device specific download dialog appears then. Depending on browser settings, the download into a standard download folder might even start automatically.
 
 *Return value:*
 
@@ -100,10 +100,10 @@ This example shows how to crop an image and save it to the Backendless file syst
 ![Crop image](./assets/crop.png)
 The cropped image is
 - compressed with a ratio of ``0.8`` (default value)
-- converted into a ``webp``-image
-- scaled to 240 pixel along the horizontal direction, whereas the height is set to keep the aspect ratio
+- converted into a ``png``-image
+- scaled to 240 pixels along the horizontal direction, whereas the height is set to keep the aspect ratio
 
-Then, some string manipulation is done to construct the new filename, which needs to have the ``webp``-extension. Finally, the file is saved to the Backendless file system by using ``arrayBuffer`` image data.
+Then, some string manipulation is done to construct the new filename, which needs to have the ``png``-extension. Finally, the file is saved to the Backendless file system by using ``arrayBuffer`` image data.
 
 ### Rotate
 
