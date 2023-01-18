@@ -36,7 +36,7 @@ All processing is done in the browser client. No transfer of original, large fil
 
 ![sample](./assets/sample.png)
 
-A resizable crop area is shown after an image has been selected or pasted.
+A resizable crop area is shown after an image has been selected or pasted. Buttons can be defined according to application needs. Buttons can have on-click handlers using the component actions.
 
 <br>
 
