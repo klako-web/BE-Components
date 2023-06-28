@@ -198,6 +198,13 @@ The ``Paste from Clipboard`` action is an asynchronous operation. Therefore, err
 
 <br>
 
+### On Interaction End
+(**Pro-version only**)
+
+Any interaction on the cropper canvas leads to firing this event. After loading an image, this event is executed as well.
+
+<br>
+
 ## Error handling
 Whenever you use codeless blocks to call component actions, you should wrap them by a ``try/catch`` block. Actions throw an error object which contains a ``code`` and a ``message`` property.
 
