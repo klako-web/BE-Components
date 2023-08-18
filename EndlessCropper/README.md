@@ -44,9 +44,11 @@ A resizable crop area is shown after an image has been selected or pasted. Butto
 For each Codeless Block of an action, you have to select the ``Id`` of the custom component instance, which you placed on the page.
 
 ### Select
-*Input parameters:* None
+*Input parameters:*
 
-An image selection dialog is shown, which depends on the device. On mobiles, you can typically capture a live camera image, or select an existing image from the device.
+- ``URL``: (**Pro-version only**) Optional. If a URL is provided via this parameter, the initial image is loaded from this URL. If this parameter is not set, an image selection dialog is shown, which depends on the device. On mobiles, you can then typically capture a live camera image, or select an existing image from the device.
+
+For the non-Pro-version, this parameter is not available, so that always the image selection dialog is shown.
 
 *Example*:
 
@@ -239,3 +241,6 @@ If you experience issues, you can [open an issue](https://github.com/klako-web/E
 This product includes the following external code libraries/components:
 
 - [react-advanced-cropper](https://github.com/advanced-cropper/react-advanced-cropper) licensed under the [MIT License](https://github.com/advanced-cropper/react-advanced-cropper/blob/master/LICENSE)
+
+## Restrictions
+This component does not work with Microsoft Internet Explorer.
