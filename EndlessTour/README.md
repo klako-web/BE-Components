@@ -96,25 +96,25 @@ If checked, the tour progress is shown by a progress bar.
 ### On Before Change
 (**Pro-version only**)
 
-Each time a new step is going to become active, this event handler is called. The context blocks ``nextStep``, ``noSteps`` and ``nextElement`` are available.
+Each time a new step is going to become active, this event handler is called. The context blocks ``Next Step``, ``No of Steps`` and ``Next Element`` are available.
 
 ![On Image Loaded](./assets/onBeforeChange.png)
 
-``nextElement`` is a reference to the DOM-element which has been linked to next tour step.
+``Next Element`` is a reference to the DOM-element which has been linked to next tour step.
 
 The handler returns a boolean value. Returning ``true`` causes the next step to become active. Returning ``false`` prevents from setting the next step active. In this case, the current step is kept active.
 
 ### On Before Exit
 (**Pro-version only**)
 
-This event handler is called before a user leaves a tour either by pressing the exit button, clicking in the background overlay, or finishing the tour in the regular way. The context blocks ``currentStep`` and ``noSteps`` are available.
+This event handler is called before a user leaves a tour either by pressing the exit button, clicking in the background overlay, or finishing the tour in the regular way. The context blocks ``Current Step`` and ``No of Steps`` are available.
 
 The handler returns a boolean value. Returning ``true`` causes the tour to exit.e. Returning ``false`` prevents the tour from exiting. In this case, the current step is kept active.
 
 ### On Complete
 (**Pro-version only**)
 
-This event handler is called when the tour is going to be completed. The context block ``finalStep`` is available.
+This event handler is called when the tour is going to be completed. The context block ``Final Step`` is available.
 
 Note: when completing a tour, the event ``On Complete`` is called before the event ``On Before Exit``.
 
@@ -178,4 +178,3 @@ Create a theme extension in Backendless UI Builder to change any of the followin
 
 ## Support
 If you experience issues, you can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``tour``, or ``tourPro``. No support guarantee is provided for the free (non-Pro) version!
-
