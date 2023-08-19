@@ -152,14 +152,14 @@ Create a theme extension in Backendless UI Builder to change any of the followin
 @el-tour-dontShowAgain-color: lighten( @el-tour-text-color, 20% );
 @el-tour-dontShowAgain-checkboxSize: 0.85em;
 
-@el-tour-dontShowAgain-bulletsColor:  #ccc;
-@el-tour-dontShowAgain-bulletsWidth:  6px;
-@el-tour-dontShowAgain-bulletsHeight: 6px;
-@el-tour-dontShowAgain-bulletsColorActive:  #999;
-@el-tour-dontShowAgain-bulletsWidthActive:  16px;
-@el-tour-dontShowAgain-bulletsHeightActive: 6px;
+@el-tour-bulletsColor:  #ccc;
+@el-tour-bulletsWidth:  6px;
+@el-tour-bulletsHeight: 6px;
+@el-tour-bulletsColorActive:  #999;
+@el-tour-bulletsWidthActive:  16px;
+@el-tour-bulletsHeightActive: 6px;
 
-@el-tour-progressBar-background: #e0e0e0;;
+@el-tour-progressBar-background: #e0e0e0;
 @el-tour-progressBar-color: #08c;
 
 @el-tour-stepNumbers-fontSize: calc( @el-tour-text-fontSize * 0.9 );
@@ -167,7 +167,7 @@ Create a theme extension in Backendless UI Builder to change any of the followin
 @el-tour-stepNumbers-padding: calc( @el-tour-text-fontSize * 0.7 );
 
 @el-tour-button-backgroundColor: #f4f4f4;
-@el-tour-button-color: @el-tour-text-color;;
+@el-tour-button-color: @el-tour-text-color;
 @el-tour-button-padding: 0.5rem 1rem;
 ```
 
@@ -175,6 +175,7 @@ Create a theme extension in Backendless UI Builder to change any of the followin
 
 ## Restrictions
 - The ``Display`` and ``Classes`` property of a component instance are not evaluated.
+- Not guaranteed to work in Microsoft Internet Explorer
 
 ## Support
 If you experience issues, you can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``tour``, or ``tourPro``. No support guarantee is provided for the free (non-Pro) version!
