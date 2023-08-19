@@ -122,7 +122,7 @@ Note: when completing a tour, the event ``On Complete`` is called before the eve
 
 ## Styles
 (**Pro-version only**)
-Create a theme extension in Backendless UI Builder to change any of the following less-variables:
+Create a theme extension in Backendless UI Builder to change any of the following less-variables (default values are shown):
 
 ```css
 @el-tour-backgroundColor: @appBackgroundColor;
