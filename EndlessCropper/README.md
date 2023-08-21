@@ -207,6 +207,15 @@ Any completed interaction on the cropper canvas leads to firing this event. Afte
 
 <br>
 
+### On Conversion Error
+(**Pro-version only**)
+
+This event is fired, if the cropped image shall be converted to a an image format which is not supported by the currently used browser. For instance, at time of writing this document, the Safari browser does not support the ``WebP`` image format. If this kind of error occurs, the image is converted to JPEG format instead.
+
+The passed ``error`` object has properties ``code`` and ``message``. See section [Error handling](#error-handling) below.
+
+<br>
+
 ## Error handling
 Whenever you use codeless blocks to call component actions, you should wrap them by a ``try/catch`` block. Actions throw an error object which contains a ``code`` and a ``message`` property.
 
@@ -222,6 +231,7 @@ Whenever you use codeless blocks to call component actions, you should wrap them
 | 104   | Clipboard contains no image data (2) |
 | 105   | Dimension parameter must be either "width" or "height" |
 | 106   | Compression ratio must be >0 and <=1 |
+| 107   | Conversion to target mime type is not supported. "image/jpeg" has been returned instead. |
 
 <br>
 
