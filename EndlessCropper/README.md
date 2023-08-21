@@ -210,7 +210,7 @@ Any completed interaction on the cropper canvas leads to firing this event. Afte
 ### On Conversion Error
 (**Pro-version only**)
 
-This event is fired, if the cropped image shall be converted to a an image format which is not supported by the currently used browser. For instance, at time of writing this document, the Safari browser does not support the ``WebP`` image format. If this kind of error occurs, the image is converted to JPEG format instead.
+This event is fired, if the cropped image shall be converted to a an image format which is not supported by the currently used browser. For instance, at time of writing this document, the Safari browser does not support the ``WebP`` image format. If this error occurs, the image is automatically converted to JPEG format instead.
 
 The passed ``error`` object has properties ``code`` and ``message``. See section [Error handling](#error-handling) below.
 
