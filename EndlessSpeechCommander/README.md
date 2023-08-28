@@ -27,10 +27,10 @@ Developers can create apps with which users can issue commands verbally via the 
 ### **Native** service provider
 Leverages the [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) of the browser. It depends on the used browser which capabilities are available and to which servers speech data is sent. [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API) is not (fully) supported by all browsers. There are three levels of support:
 - fully supported (e.g. Chrome on Desktop)
-- no support for continuous listening (e.g. Chrome on Android)
+- no support for continuous listening
 - no support at all (e.g. Firefox)
 
-You should test browser capabilities carefully, as this evolves over time. To get the supported feature of a browser, use the action ``Get Status``.
+You should test browser capabilities carefully, as this evolves over time. To get the supported feature of a browser, use the action ``Get Status`` of ***Speech Commander***.
 
 Although the browser support range for the native service provider is limited, there is a broad range of languages which are supported.
 
