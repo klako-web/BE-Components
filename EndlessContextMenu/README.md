@@ -43,14 +43,23 @@ A list (= array) of menu item objects. The list contains objects each representi
     "label": "more ...",
     "submenu":
     [{
-      "action": "subaction1",
-      "label": "Sub-Action 1"
+      "action": "saveas",
+      "label": "Save as ...",
+      "iconClass": "material-icons-round",
+      "iconName": "save"
     },
-      {
-        "action": "subaction2",
-        "label": "Sub-Action 2"
+    {
+      "action": "print",
+      "label": "Print ...",
+      "iconClass": "material-icons-round",
+      "iconName": "print"
       }]
-  }]
+  },
+  {
+    "action": "exit",
+    "label": "Exit" 
+  }
+]
 ```
 The following properties can be used to define a menu item object:
 - ``action``: an Id which identifies the action to be performed when clicking on the menu item.
