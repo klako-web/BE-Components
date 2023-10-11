@@ -1,9 +1,5 @@
 # Endless Context Menu
 
----
->**This component has not been released yet!**
----
-
 This is the documentation for the UI component ***Endless Context Menu*** for the [Backendless Full Stack Visual App Development Platform](https://backendless.com).
 
 <center>
@@ -18,7 +14,7 @@ For desktop web applications, define context menus which appear on right-mouse-c
 ![Sample](./assets/sample.png)
 
 ## General usage
-Place the component within a Block-UI-component which shall show the context menu on right-mouse-click.
+Place the component within a Block-UI-component. Right-Mouse-Click within this block brings up the context menu then.
 
 ## Properties
 
@@ -76,7 +72,7 @@ If you want to define a menu programmatically, then use data binding for the ``I
 If checked (default), the menu is closed when clicking on a menu entry (except for opening a submenu).
 
 ### Show Up Duration
-The duration in milliseconds used for animating the context menu. Defaults to 200 ms.
+The duration in milliseconds used for animating the context menu appearance. Defaults to 200 ms.
 
 <br>
 
