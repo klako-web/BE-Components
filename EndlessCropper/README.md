@@ -46,9 +46,9 @@ For each Codeless Block of an action, you have to select the ``Id`` of the custo
 ### Select
 *Input parameters:*
 
-- ``URL``: (**Pro-version only**) Optional. If a URL is provided via this parameter, the initial image is loaded from this URL. If this parameter is not set, an image selection dialog is shown, which depends on the device. On mobiles, you can then typically capture a live camera image, or select an existing image from the device.
+- ``URL``: (**Pro-version only**) Optional. If a URL is provided via this parameter, the initial image is loaded from this URL. The url will likely usually address an HTTP(S)-resource, but can as well be a [data-url](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/Data_URLs) or a [blob-url](https://developer.mozilla.org/en-US/docs/Web/API/Blob?retiredLocale=de#creating_a_url_representing_the_contents_of_a_typed_array). With the latter two options, you can crop images which are a result of a preceeding image processing step performed within your app. 
 
-For the non-Pro-version, this parameter is not available, so that always the image selection dialog is shown.
+If this parameter is not set, an image selection dialog is shown, which depends on the device. On mobiles, you can then typically capture a live camera image, or select an existing image from the device. For the non-Pro-version, this parameter is not available, so that always the image selection dialog is shown.
 
 *Example*:
 
@@ -235,10 +235,10 @@ Whenever you use codeless blocks to call component actions, you should wrap them
 
 <br>
 
-### Error handling for "Paste from Clipboard" action
+### Error handling for asynchronous actions
 (**Pro-version only**)
 
-The ``Paste from Clipboard`` action is special because it runs asynchronously. Therefore, errors are communicated via the event ``On Paste Error`` (see above event description).
+The ``Paste from Clipboard`` action and the image conversion process are special because they run asynchronously. Therefore, errors are communicated via the event ``On Paste Error`` and ``On Conversion Error`` (see above event descriptions).
 
 <br>
 
