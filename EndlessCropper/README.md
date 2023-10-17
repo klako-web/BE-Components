@@ -205,6 +205,8 @@ The ``Paste from Clipboard`` action is an asynchronous operation. Therefore, err
 
 Any completed interaction on the cropper canvas leads to firing this event. After loading an image, this event is executed as well.
 
+A typical use case for this event is "automatic cropping". If you put the **Crop**-action into this event handler, cropping will happen automatically whenever you load an image, or resize/move the cropping area.
+
 <br>
 
 ### On Conversion Error
