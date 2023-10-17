@@ -11,14 +11,13 @@ This is the documentation for the UI components ***Endless Cropper*** and ***End
 
 ## Use Cases
 - Select an image from local file system, or mobile device camera
-- Paste an image from clipboard (**Pro-version only**)
-- Rotate the image
-- Zoom in/out
-- Crop a retangular area of interest 
-- Crop a circular area (**Pro-version only**)
+- Paste an image from clipboard, or load from any URL (http:, data:, blob:) (**Pro-version only**)
+- Rotate and zoom in/out
+- Crop a rectangular area of interest 
+- Crop a circular/oval area (**Pro-version only**)
 - Reduce size (width, height) and quality (for lossy image formats) (**Pro-version only**)
 - Change image type of original image to jpg, png, webp, etc. (**Pro-version only**)
-- Select the cropping result for further processing by Backendless No-Code logic (e.g. saving to the Backendless file system).
+- Retrieve the cropping result for further processing by Backendless No-Code logic (e.g. saving to the Backendless file system).
 
 All processing is done in the browser client. No transfer of original, large files to the backend just to process them there and to delete them afterwards.
 
