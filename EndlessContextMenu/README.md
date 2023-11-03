@@ -10,7 +10,7 @@ This is the documentation for the UI component ***Endless Context Menu*** for th
 
 ## Use Cases
 For desktop web applications, define context menus which appear on right-mouse-click. On one page, multiple menus can be defined by linking one menu to a UI element. Clicking on a menu item triggers an event handler where you can code the respective actions. Context menus can have a two-level hierarchical structure.
-On touch screen devices different from Apple iOS devices, the menu can be triggered by a long touch event!
+On some touch screen devices, the menu can be triggered by a long touch event. Note: Context Menu does not work on Safari on iOS!
 
 ![Sample](./assets/sample.png)
 
@@ -120,6 +120,9 @@ Create a theme extension and change any of the following less-variables (default
 ```
 
 <br>
+
+## Restrictions 
+Context menu does not work on Safari on iOS!
 
 ## Support 
 You can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``contextMenu``.
