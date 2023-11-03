@@ -10,6 +10,7 @@ This is the documentation for the UI component ***Endless Context Menu*** for th
 
 ## Use Cases
 For desktop web applications, define context menus which appear on right-mouse-click. On one page, multiple menus can be defined by linking one menu to a UI element. Clicking on a menu item triggers an event handler where you can code the respective actions. Context menus can have a two-level hierarchical structure.
+**On touch screens, the menu can be trigger by a long touch event!**
 
 ![Sample](./assets/sample.png)
 
