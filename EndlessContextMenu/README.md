@@ -122,7 +122,7 @@ Create a theme extension and change any of the following less-variables (default
 <br>
 
 ## Restrictions 
-Context menu does not work on Safari on iOS!
+Context menu currently does not work on Safari on iOS! We are working on it. Open an issue, if you are interested.
 
 ## Support 
 You can [open an issue](https://github.com/klako-web/Endless-Components/issues/new) and assign the label ``contextMenu``.
